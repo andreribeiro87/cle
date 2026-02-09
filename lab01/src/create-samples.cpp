@@ -36,7 +36,7 @@
  * Then, each block starts with the size of the compressed data, followed by
  * the size of the original data (i.e., not compressed) and finalized by the
  * compressed data.
-*/
+ */
 
 /*
  *
@@ -65,13 +65,13 @@ double rand_uniform(double min, double max)
     return dist(gen);
 }
 
-
-int main(int argc, char* argv[])
+int main(int argc, char *argv[])
 {
     // 1. Number of blocks to generate as argument
-    if (argc < 2) {
+    if (argc < 2)
+    {
         std::cerr << "Missing argument: create-sample N_BLOCKS" << std::endl;
-        std::cerr << "Each block contains approximately "<<  BLOCK_SZ/1024/1024 << "MiB of data" << std::endl;
+        std::cerr << "Each block contains approximately " << BLOCK_SZ / 1024 / 1024 << "MiB of data" << std::endl;
         return 1;
     }
 
@@ -87,70 +87,76 @@ int main(int argc, char* argv[])
         city_data[i].std = rand_uniform(1.0, 4.0);
 
     unsigned int nsamples = 0;
-    char* data = new char[BLOCK_SZ];
+    char *data = new char[BLOCK_SZ];
     std::memset(data, 0, BLOCK_SZ);
 
     // 2. Create the file
-    std::stringstream ss; ss << "measurements-" << nblocks << ".cle";
+    std::stringstream ss;
+    ss << "measurements-" << nblocks << ".cle";
     std::string fname = ss.str();
 
     int fd = open(fname.c_str(), O_WRONLY | O_CREAT | O_TRUNC,
                   S_IRUSR | S_IWUSR | S_IRGRP | S_IROTH);
 
     // We need to know how many block to load
-    write(fd, (void*)&nblocks, sizeof(nblocks));
+    write(fd, (void *)&nblocks, sizeof(nblocks));
 
     std::cout << "Generating " << nblocks << " block(s) ..." << std::endl;
-    for (int i = 0; i < nblocks; ++i){
+    for (int i = 0; i < nblocks; ++i)
+    {
         int blk_size = 0;
 
-        while (blk_size <= BLOCK_SZ){
+        while (blk_size <= BLOCK_SZ)
+        {
 
-            int select = rand_uniform(0, ncities-1);
+            int select = rand_uniform(0, ncities - 1);
             char text[512];
 
             int text_size = std::snprintf(text, 512, "%s;%.1f\n",
-                city_data[select].city,
-                rand_normal(city_data[select].mean, 4)
-            );
+                                          city_data[select].city,
+                                          rand_normal(city_data[select].mean, city_data[select].std));
 
-            if ((blk_size + text_size) <= BLOCK_SZ){
+            if ((blk_size + text_size) <= BLOCK_SZ)
+            {
 
                 std::strncpy(data + blk_size, text, text_size);
                 blk_size += text_size;
                 nsamples += 1;
-
-            } else {
+            }
+            else
+            {
                 std::cout << " writting block " << i + 1 << std::endl;
 
                 // Time to a) compress the data and b) write it to the file
                 auto alloc_sz = LZ4_compressBound(blk_size);
-                char* dst = new char[alloc_sz];
+                char *dst = new char[alloc_sz];
 
                 int new_sz = LZ4_compress_default(data, dst, blk_size, alloc_sz);
-                if (new_sz == 0){
+                if (new_sz == 0)
+                {
                     std::cerr << "Unable to compress data..." << std::endl;
                     return 1;
                 }
 
-                write(fd, (void*)&new_sz, sizeof(new_sz));
-                write(fd, (void*)&blk_size, sizeof(blk_size));
+                write(fd, (void *)&new_sz, sizeof(new_sz));
+                write(fd, (void *)&blk_size, sizeof(blk_size));
 
                 int ret = write(fd, dst, new_sz);
-                if (ret != new_sz){
+                if (ret != new_sz)
+                {
                     std::cerr << "Unable to write to file." << std::endl;
                     return 1;
                 }
 
-                delete [] dst;
+                delete[] dst;
                 blk_size = BLOCK_SZ + text_size;
                 continue;
             }
-        }// end while(blk_size <= BLOCK_SZ)
-    }// end for
+        } // end while(blk_size <= BLOCK_SZ)
+    } // end for
 
     close(fd);
-    delete [] data;
+    delete[] data;
 
     // Done
     std::cout << "Done: " << nsamples << " city samples" << std::endl;
