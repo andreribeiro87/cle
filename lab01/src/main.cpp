@@ -1,138 +1,136 @@
+/**
+ * cle-ws  –  Weather Station Aggregator
+ *   <station_name>;<temperature>\n
+ *   temperature  ::=  [-][0-9]{1,2}'.'[0-9]       (e.g. -3.7, 15.4, -99.9)
+ */
 
-#include <iostream>
-#include <fstream>
-#include <sstream>
-#include <cmath>
-#include <vector>
 #include <algorithm>
-
-#include <map>
+#include <cstdio>
+#include <cstdlib>
+#include <fstream>
+#include <iostream>
+#include <vector>
 
 #include "lz4.h"
-
-#define BLOCK_MiB (512 * 1024 * 1024)
-
-struct ValuesFor
-{
-    double count = 0.0;
-    double max = -std::numeric_limits<double>::infinity();
-    double min = std::numeric_limits<double>::infinity();
-    double mean = 0.0;
-    double M2 = 0.0;
-    double variance = 0.0;
-    double stddev = 0.0;
-};
+#include "fast_parse.h" // StationMap, process_block
+// stats.h is pulled in transitively via fast_parse.h
 
 int main(int argc, char *argv[])
 {
-    // Use default file ...
-    const char *file = "measurements-1.cle";
-    if (argc > 1)
+    const char *file = (argc > 1) ? argv[1] : "measurements-1.cle";
+
+    std::FILE *fh = std::fopen(file, "rb");
+    if (!fh)
     {
-        // ... or the first argument.
-        file = argv[1];
-    }
-    std::ifstream fh(file);
-    if (not fh.is_open())
-    {
-        std::cerr << "Unable to open '" << file << "'" << std::endl;
+        std::fprintf(stderr, "Unable to open '%s'\n", file);
         return 1;
     }
-    // Get the number of blocks
-    int nblocks;
-    fh.read((char *)&nblocks, sizeof(int));
 
-    std::map<std::string, ValuesFor> data;
-    // process block by block
-    for (int i = 0; i < nblocks; ++i)
+    int32_t nblocks = 0;
+    if (std::fread(&nblocks, sizeof(int32_t), 1, fh) != 1)
     {
+        std::fprintf(stderr, "Failed to read block count\n");
+        std::fclose(fh);
+        return 1;
+    }
 
-        int compressed_size;
-        int block_size;
-        fh.read((char *)&compressed_size, sizeof(int));
-        fh.read((char *)&block_size, sizeof(int));
+    std::vector<char> compressed_buf;
+    std::vector<char> decompressed_buf;
 
-        // -- Decompress the block data using lz4
-        // TODO: Implement
-        char *compressed_data = new char[compressed_size];
-        fh.read(compressed_data, compressed_size);
-        char *decompressed_data = new char[block_size];
-        int decompress_size = LZ4_decompress_safe(compressed_data, decompressed_data, compressed_size, block_size);
-        if (decompress_size < 0)
+    compressed_buf.reserve(256 * 1024 * 1024);       // 256 MiB
+    decompressed_buf.reserve(512 * 1024 * 1024 + 1); // 512 MiB + sentinel
+
+    StationMap data;
+    data.reserve(16384); // power-of-2 >= 10 000 avoids rehashing
+
+    for (int32_t i = 0; i < nblocks; ++i)
+    {
+        int32_t compressed_size = 0;
+        int32_t decompressed_size = 0;
+
+        if (std::fread(&compressed_size, sizeof(int32_t), 1, fh) != 1 ||
+            std::fread(&decompressed_size, sizeof(int32_t), 1, fh) != 1)
         {
-            std::cerr << "Unable to decompress data..." << std::endl;
+            std::fprintf(stderr, "Block %d: failed to read header\n", i + 1);
+            std::fclose(fh);
             return 1;
         }
-        std::cout << "Block " << i + 1 << ": compressed size = " << compressed_size
-                  << " bytes, decompressed size = " << decompress_size << " bytes" << std::endl;
 
-        // -- Process the data
-        // TODO: Implement
-        /* a dict string, vec, the data has 1 thousand millions */
-        std::istringstream iss(std::string(decompressed_data, block_size));
+        if (static_cast<int>(compressed_buf.size()) < compressed_size)
+            compressed_buf.resize(static_cast<std::size_t>(compressed_size));
 
-        std::string line;
-        while (std::getline(iss, line))
+        if (static_cast<int>(decompressed_buf.size()) < decompressed_size)
+            decompressed_buf.resize(static_cast<std::size_t>(decompressed_size));
+
+        if (std::fread(compressed_buf.data(), 1,
+                       static_cast<std::size_t>(compressed_size), fh) != static_cast<std::size_t>(compressed_size))
         {
-            std::istringstream line_stream(line);
-            std::string key;
-            // the line is separated by ';', the first part is the key, the second part is the value
-            // make a substring of the line until the first ';'
-            auto pos = line.find(';');
-            double value;
-            if (pos == std::string::npos)
-            {
-                std::cerr << "Invalid line: " << line << std::endl;
-                continue;
-            }
-            key = line.substr(0, pos);
-            value = std::stod(line.substr(pos + 1));
-
-            auto &values = data[key];
-
-            values.count += 1.0;
-            double delta = value - values.mean;
-            values.mean += delta / values.count;
-            double delta2 = value - values.mean;
-            values.M2 += delta * delta2;
-            values.variance = values.M2 / values.count;
-            values.stddev = std::sqrt(values.variance);
-            values.max = std::max(values.max, value);
-            values.min = std::min(values.min, value);
-            // std::cout << "Key: " << key << ", Value: " << value << std::endl;
+            std::fprintf(stderr, "Block %d: failed to read compressed data\n", i + 1);
+            std::fclose(fh);
+            return 1;
         }
+
+        const int actual_size = LZ4_decompress_safe(
+            compressed_buf.data(),
+            decompressed_buf.data(),
+            compressed_size,
+            decompressed_size);
+
+        if (actual_size < 0)
+        {
+            std::fprintf(stderr, "Block %d: LZ4 decompression failed (error %d)\n",
+                         i + 1, actual_size);
+            std::fclose(fh);
+            return 1;
+        }
+
+        process_block(decompressed_buf.data(), actual_size, data);
     }
+    std::fclose(fh);
 
-    std::vector<std::pair<std::string, ValuesFor>> sorted_data(data.begin(), data.end());
-    std::sort(sorted_data.begin(), sorted_data.end(), [](const auto &a, const auto &b)
-              { return a.second.stddev < b.second.stddev; });
+    std::vector<std::pair<const std::string *, const ValuesFor *>> sorted;
+    sorted.reserve(data.size());
+    for (const auto &kv : data)
+        sorted.emplace_back(&kv.first, &kv.second);
 
-    std::ofstream output_file("results.json");
-    output_file << "{\n  \"cities\": [\n";
+    std::sort(sorted.begin(), sorted.end(),
+              [](const auto &a, const auto &b)
+              {
+                  return a.second->stddev() < b.second->stddev();
+              });
 
-    bool first = true;
-    for (auto it = sorted_data.begin(); it != sorted_data.end(); ++it)
+    std::FILE *out = std::fopen("results.json", "w");
+    if (!out)
     {
-        const auto &entry = *it;
-        const auto &vals = entry.second;
-        double avg = vals.mean;
-
-        if (!first)
-            output_file << ",\n";
-        first = false;
-
-        output_file << "    {\n";
-        output_file << "      \"name\": \"" << entry.first << "\",\n";
-        output_file << "      \"avg\": " << avg << ",\n";
-        output_file << "      \"std\": " << vals.stddev << ",\n";
-        output_file << "      \"min\": " << vals.min << ",\n";
-        output_file << "      \"max\": " << vals.max << "\n";
-        output_file << "    }";
+        std::fprintf(stderr, "Unable to open results.json for writing\n");
+        return 1;
     }
 
-    output_file << "\n  ]\n}\n";
-    output_file.close();
+    std::fputs("{\"cities\":[\n", out);
 
-    fh.close();
+    for (std::size_t idx = 0; idx < sorted.size(); ++idx)
+    {
+        const auto &name = *sorted[idx].first;
+        const auto &vals = *sorted[idx].second;
+
+        if (idx > 0)
+            std::fputs(",\n", out);
+
+        std::fprintf(out,
+                     "{\"name\":\"%s\","
+                     "\"avg\":%.10g,"
+                     "\"std\":%.10g,"
+                     "\"min\":%.1f,"
+                     "\"max\":%.1f}",
+                     name.c_str(),
+                     vals.mean,
+                     vals.stddev(),
+                     vals.min(),
+                     vals.max());
+    }
+
+    std::fputs("\n]}\n", out);
+    std::fclose(out);
+
     return 0;
 }
