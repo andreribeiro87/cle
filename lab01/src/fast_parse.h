@@ -89,7 +89,7 @@ inline void process_block(const char *__restrict__ buf,
         if (p < end && *p == '\n')
             ++p;
 
-        auto it = data.find(key); // ignore the linter error. It will work 
+        auto it = data.find(key); // ignore the linter error. It will work
         if (it == data.end()) [[unlikely]]
         {
             auto [ins, _] = data.emplace(std::string(key), ValuesFor{});

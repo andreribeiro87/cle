@@ -1,2895 +1,415 @@
-{
-  "cities": [
-    {
-      "name": "Philadelphia",
-      "avg": 13.205,
-      "std": 3.97117,
-      "min": -2.8,
-      "max": 28.8
-    },
-    {
-      "name": "Bangui",
-      "avg": 25.9802,
-      "std": 3.97483,
-      "min": 7.5,
-      "max": 43.1
-    },
-    {
-      "name": "Denpasar",
-      "avg": 23.7218,
-      "std": 3.9758,
-      "min": 5.8,
-      "max": 39.7
-    },
-    {
-      "name": "Santo Domingo",
-      "avg": 25.8974,
-      "std": 3.97834,
-      "min": 10.3,
-      "max": 43.5
-    },
-    {
-      "name": "Mek'ele",
-      "avg": 22.6919,
-      "std": 3.97859,
-      "min": 5.6,
-      "max": 40.3
-    },
-    {
-      "name": "Fianarantsoa",
-      "avg": 17.8886,
-      "std": 3.9793,
-      "min": -0.5,
-      "max": 35.3
-    },
-    {
-      "name": "Memphis",
-      "avg": 17.2095,
-      "std": 3.98009,
-      "min": 0.2,
-      "max": 34.5
-    },
-    {
-      "name": "Entebbe",
-      "avg": 21.005,
-      "std": 3.98045,
-      "min": 5.1,
-      "max": 38.6
-    },
-    {
-      "name": "Oslo",
-      "avg": 5.70423,
-      "std": 3.98103,
-      "min": -12.7,
-      "max": 23
-    },
-    {
-      "name": "Porto",
-      "avg": 15.6979,
-      "std": 3.9818,
-      "min": -1,
-      "max": 32.5
-    },
-    {
-      "name": "Rangpur",
-      "avg": 24.3986,
-      "std": 3.98204,
-      "min": 7.8,
-      "max": 42.2
-    },
-    {
-      "name": "Fresno",
-      "avg": 17.8832,
-      "std": 3.98211,
-      "min": 1.6,
-      "max": 35
-    },
-    {
-      "name": "Kampala",
-      "avg": 19.9877,
-      "std": 3.98306,
-      "min": 3.7,
-      "max": 38.8
-    },
-    {
-      "name": "Los Angeles",
-      "avg": 18.5967,
-      "std": 3.98338,
-      "min": 1.6,
-      "max": 34.2
-    },
-    {
-      "name": "Baghdad",
-      "avg": 22.7677,
-      "std": 3.9838,
-      "min": 5.8,
-      "max": 41.9
-    },
-    {
-      "name": "Benghazi",
-      "avg": 19.8824,
-      "std": 3.98451,
-      "min": 2.7,
-      "max": 37.8
-    },
-    {
-      "name": "Willemstad",
-      "avg": 27.9884,
-      "std": 3.98473,
-      "min": 11.7,
-      "max": 45.6
-    },
-    {
-      "name": "Abéché",
-      "avg": 29.3975,
-      "std": 3.98483,
-      "min": 12.2,
-      "max": 48.4
-    },
-    {
-      "name": "Edinburgh",
-      "avg": 9.308,
-      "std": 3.98483,
-      "min": -9.3,
-      "max": 25.5
-    },
-    {
-      "name": "Bangkok",
-      "avg": 28.5818,
-      "std": 3.98502,
-      "min": 12.7,
-      "max": 44.9
-    },
-    {
-      "name": "Baku",
-      "avg": 15.0835,
-      "std": 3.98518,
-      "min": -4.5,
-      "max": 32.6
-    },
-    {
-      "name": "San Salvador",
-      "avg": 23.0835,
-      "std": 3.98522,
-      "min": 5.3,
-      "max": 39.8
-    },
-    {
-      "name": "Gagnoa",
-      "avg": 26.0076,
-      "std": 3.98552,
-      "min": 9.3,
-      "max": 43.8
-    },
-    {
-      "name": "Riyadh",
-      "avg": 25.9764,
-      "std": 3.98554,
-      "min": 8.6,
-      "max": 44
-    },
-    {
-      "name": "Oklahoma City",
-      "avg": 15.8745,
-      "std": 3.9856,
-      "min": -1.2,
-      "max": 33.2
-    },
-    {
-      "name": "Honolulu",
-      "avg": 25.4045,
-      "std": 3.98579,
-      "min": 9.3,
-      "max": 42
-    },
-    {
-      "name": "Hiroshima",
-      "avg": 16.3085,
-      "std": 3.98592,
-      "min": -0.6,
-      "max": 33.9
-    },
-    {
-      "name": "Jacksonville",
-      "avg": 20.2861,
-      "std": 3.98596,
-      "min": 2.5,
-      "max": 38.5
-    },
-    {
-      "name": "Lyon",
-      "avg": 12.5029,
-      "std": 3.98615,
-      "min": -5.8,
-      "max": 30
-    },
-    {
-      "name": "Maputo",
-      "avg": 22.7845,
-      "std": 3.98616,
-      "min": 5.8,
-      "max": 39.2
-    },
-    {
-      "name": "Washington, D.C.",
-      "avg": 14.6015,
-      "std": 3.98617,
-      "min": -4.1,
-      "max": 31.3
-    },
-    {
-      "name": "Bordeaux",
-      "avg": 14.2175,
-      "std": 3.98634,
-      "min": -4.5,
-      "max": 32.6
-    },
-    {
-      "name": "Christchurch",
-      "avg": 12.1966,
-      "std": 3.98641,
-      "min": -4,
-      "max": 29.7
-    },
-    {
-      "name": "Kuopio",
-      "avg": 3.3926,
-      "std": 3.98666,
-      "min": -15.5,
-      "max": 21
-    },
-    {
-      "name": "Nouakchott",
-      "avg": 25.6903,
-      "std": 3.98674,
-      "min": 8.8,
-      "max": 42.8
-    },
-    {
-      "name": "Tamale",
-      "avg": 27.8899,
-      "std": 3.98687,
-      "min": 11.2,
-      "max": 45.6
-    },
-    {
-      "name": "Cairo",
-      "avg": 21.3804,
-      "std": 3.98741,
-      "min": 3.8,
-      "max": 39
-    },
-    {
-      "name": "Tampa",
-      "avg": 22.917,
-      "std": 3.98742,
-      "min": 4.6,
-      "max": 41.4
-    },
-    {
-      "name": "Phoenix",
-      "avg": 23.9012,
-      "std": 3.98767,
-      "min": 4.3,
-      "max": 42.5
-    },
-    {
-      "name": "Podgorica",
-      "avg": 15.3019,
-      "std": 3.98781,
-      "min": -4.7,
-      "max": 32.8
-    },
-    {
-      "name": "Juba",
-      "avg": 27.792,
-      "std": 3.98791,
-      "min": 11.4,
-      "max": 45.8
-    },
-    {
-      "name": "Boise",
-      "avg": 11.4217,
-      "std": 3.98794,
-      "min": -5,
-      "max": 27.3
-    },
-    {
-      "name": "Milan",
-      "avg": 13.0148,
-      "std": 3.98806,
-      "min": -3.5,
-      "max": 29.9
-    },
-    {
-      "name": "Toluca",
-      "avg": 12.4045,
-      "std": 3.98808,
-      "min": -4.4,
-      "max": 30.3
-    },
-    {
-      "name": "Ndola",
-      "avg": 20.3041,
-      "std": 3.98819,
-      "min": 3.4,
-      "max": 36.9
-    },
-    {
-      "name": "Ouahigouya",
-      "avg": 28.5969,
-      "std": 3.98823,
-      "min": 12,
-      "max": 46.3
-    },
-    {
-      "name": "Astana",
-      "avg": 3.48499,
-      "std": 3.98837,
-      "min": -13.5,
-      "max": 20.1
-    },
-    {
-      "name": "Abha",
-      "avg": 17.9957,
-      "std": 3.98839,
-      "min": -0.5,
-      "max": 35
-    },
-    {
-      "name": "Split",
-      "avg": 16.0938,
-      "std": 3.9885,
-      "min": -0.4,
-      "max": 33.6
-    },
-    {
-      "name": "Saskatoon",
-      "avg": 3.27752,
-      "std": 3.98868,
-      "min": -13.3,
-      "max": 19.9
-    },
-    {
-      "name": "Guatemala City",
-      "avg": 20.3931,
-      "std": 3.98881,
-      "min": 1.5,
-      "max": 37.8
-    },
-    {
-      "name": "Reykjavík",
-      "avg": 4.2895,
-      "std": 3.98903,
-      "min": -13.5,
-      "max": 23.2
-    },
-    {
-      "name": "San José",
-      "avg": 22.5912,
-      "std": 3.98911,
-      "min": 6.7,
-      "max": 42.1
-    },
-    {
-      "name": "Lake Havasu City",
-      "avg": 23.6897,
-      "std": 3.98919,
-      "min": 6.3,
-      "max": 40.5
-    },
-    {
-      "name": "Jerusalem",
-      "avg": 18.2858,
-      "std": 3.98923,
-      "min": 1.4,
-      "max": 35
-    },
-    {
-      "name": "Minneapolis",
-      "avg": 7.77386,
-      "std": 3.98925,
-      "min": -8.7,
-      "max": 24.5
-    },
-    {
-      "name": "Fukuoka",
-      "avg": 16.976,
-      "std": 3.98931,
-      "min": -1.7,
-      "max": 35.2
-    },
-    {
-      "name": "Ashgabat",
-      "avg": 17.0974,
-      "std": 3.98939,
-      "min": 0.3,
-      "max": 33.4
-    },
-    {
-      "name": "La Ceiba",
-      "avg": 26.1985,
-      "std": 3.98962,
-      "min": 9.3,
-      "max": 42.7
-    },
-    {
-      "name": "Skopje",
-      "avg": 12.3723,
-      "std": 3.99001,
-      "min": -4.3,
-      "max": 28.3
-    },
-    {
-      "name": "Kolkata",
-      "avg": 26.719,
-      "std": 3.99022,
-      "min": 9.7,
-      "max": 42.5
-    },
-    {
-      "name": "Hanga Roa",
-      "avg": 20.4951,
-      "std": 3.99027,
-      "min": 2.6,
-      "max": 38
-    },
-    {
-      "name": "Bilbao",
-      "avg": 14.6872,
-      "std": 3.99047,
-      "min": -2.2,
-      "max": 31.4
-    },
-    {
-      "name": "Belgrade",
-      "avg": 12.4992,
-      "std": 3.99058,
-      "min": -5.1,
-      "max": 29.1
-    },
-    {
-      "name": "Yerevan",
-      "avg": 12.4095,
-      "std": 3.99103,
-      "min": -4.1,
-      "max": 28.8
-    },
-    {
-      "name": "Salt Lake City",
-      "avg": 11.5955,
-      "std": 3.99108,
-      "min": -4.7,
-      "max": 29.4
-    },
-    {
-      "name": "Erzurum",
-      "avg": 5.09796,
-      "std": 3.99111,
-      "min": -12.1,
-      "max": 22.6
-    },
-    {
-      "name": "Tabriz",
-      "avg": 12.6061,
-      "std": 3.99114,
-      "min": -4.2,
-      "max": 29.6
-    },
-    {
-      "name": "Karachi",
-      "avg": 25.9978,
-      "std": 3.99115,
-      "min": 9.9,
-      "max": 42.6
-    },
-    {
-      "name": "City of San Marino",
-      "avg": 11.8119,
-      "std": 3.99116,
-      "min": -5.6,
-      "max": 29.6
-    },
-    {
-      "name": "Hamburg",
-      "avg": 9.67614,
-      "std": 3.99117,
-      "min": -6.9,
-      "max": 26
-    },
-    {
-      "name": "Ho Chi Minh City",
-      "avg": 27.3852,
-      "std": 3.99127,
-      "min": 7.4,
-      "max": 45
-    },
-    {
-      "name": "Gabès",
-      "avg": 19.496,
-      "std": 3.99128,
-      "min": -0.4,
-      "max": 37.7
-    },
-    {
-      "name": "Halifax",
-      "avg": 7.49479,
-      "std": 3.9914,
-      "min": -11.1,
-      "max": 23.9
-    },
-    {
-      "name": "Athens",
-      "avg": 19.208,
-      "std": 3.99153,
-      "min": 2.1,
-      "max": 36.5
-    },
-    {
-      "name": "Omaha",
-      "avg": 10.6041,
-      "std": 3.99153,
-      "min": -6.6,
-      "max": 27
-    },
-    {
-      "name": "Portland {OR}",
-      "avg": 12.3872,
-      "std": 3.99159,
-      "min": -5.7,
-      "max": 28.9
-    },
-    {
-      "name": "Bridgetown",
-      "avg": 27.0309,
-      "std": 3.99159,
-      "min": 11,
-      "max": 42.7
-    },
-    {
-      "name": "Ahvaz",
-      "avg": 25.3672,
-      "std": 3.99167,
-      "min": 6.3,
-      "max": 41.5
-    },
-    {
-      "name": "Stockholm",
-      "avg": 6.59356,
-      "std": 3.9917,
-      "min": -10.8,
-      "max": 23.2
-    },
-    {
-      "name": "Surabaya",
-      "avg": 27.0926,
-      "std": 3.99175,
-      "min": 9.1,
-      "max": 49.4
-    },
-    {
-      "name": "Gangtok",
-      "avg": 15.1863,
-      "std": 3.99177,
-      "min": -2.1,
-      "max": 36
-    },
-    {
-      "name": "Dikson",
-      "avg": -11.0964,
-      "std": 3.99178,
-      "min": -29.1,
-      "max": 5.9
-    },
-    {
-      "name": "N'Djamena",
-      "avg": 28.293,
-      "std": 3.99185,
-      "min": 11.4,
-      "max": 45.6
-    },
-    {
-      "name": "Murmansk",
-      "avg": 0.630125,
-      "std": 3.99191,
-      "min": -17,
-      "max": 17.5
-    },
-    {
-      "name": "Zagreb",
-      "avg": 10.693,
-      "std": 3.99206,
-      "min": -11.5,
-      "max": 28.1
-    },
-    {
-      "name": "Lusaka",
-      "avg": 19.9034,
-      "std": 3.99207,
-      "min": 1.2,
-      "max": 36.2
-    },
-    {
-      "name": "Conakry",
-      "avg": 26.3971,
-      "std": 3.9922,
-      "min": 10.1,
-      "max": 42.6
-    },
-    {
-      "name": "Atlanta",
-      "avg": 16.9873,
-      "std": 3.99228,
-      "min": -0.9,
-      "max": 33.4
-    },
-    {
-      "name": "Ürümqi",
-      "avg": 7.40901,
-      "std": 3.99231,
-      "min": -13.2,
-      "max": 23.5
-    },
-    {
-      "name": "Milwaukee",
-      "avg": 8.90283,
-      "std": 3.99237,
-      "min": -7.3,
-      "max": 26.3
-    },
-    {
-      "name": "Darwin",
-      "avg": 27.5891,
-      "std": 3.99238,
-      "min": 10.8,
-      "max": 45
-    },
-    {
-      "name": "Yangon",
-      "avg": 27.5061,
-      "std": 3.99251,
-      "min": 10.6,
-      "max": 45
-    },
-    {
-      "name": "Houston",
-      "avg": 20.8003,
-      "std": 3.99251,
-      "min": 3,
-      "max": 36.9
-    },
-    {
-      "name": "Prague",
-      "avg": 8.41923,
-      "std": 3.99263,
-      "min": -11.7,
-      "max": 27.1
-    },
-    {
-      "name": "Irkutsk",
-      "avg": 0.995821,
-      "std": 3.99267,
-      "min": -15.9,
-      "max": 19.4
-    },
-    {
-      "name": "Accra",
-      "avg": 26.4304,
-      "std": 3.99278,
-      "min": 6.2,
-      "max": 43.7
-    },
-    {
-      "name": "Da Nang",
-      "avg": 25.8173,
-      "std": 3.99282,
-      "min": 8.4,
-      "max": 43.6
-    },
-    {
-      "name": "New Delhi",
-      "avg": 25.0033,
-      "std": 3.99287,
-      "min": 7.4,
-      "max": 41.6
-    },
-    {
-      "name": "Hat Yai",
-      "avg": 26.9978,
-      "std": 3.99289,
-      "min": 8.2,
-      "max": 44.6
-    },
-    {
-      "name": "Lodwar",
-      "avg": 29.2947,
-      "std": 3.99299,
-      "min": 12.9,
-      "max": 48
-    },
-    {
-      "name": "Ankara",
-      "avg": 11.9982,
-      "std": 3.99309,
-      "min": -4.6,
-      "max": 28.5
-    },
-    {
-      "name": "Yellowknife",
-      "avg": -4.30716,
-      "std": 3.99324,
-      "min": -23.4,
-      "max": 11.9
-    },
-    {
-      "name": "Whitehorse",
-      "avg": -0.110999,
-      "std": 3.9933,
-      "min": -17.9,
-      "max": 16.8
-    },
-    {
-      "name": "Djibouti",
-      "avg": 29.9234,
-      "std": 3.99341,
-      "min": 11.9,
-      "max": 50.8
-    },
-    {
-      "name": "Marseille",
-      "avg": 15.8015,
-      "std": 3.99359,
-      "min": -1.4,
-      "max": 34.8
-    },
-    {
-      "name": "Garoua",
-      "avg": 28.2851,
-      "std": 3.9939,
-      "min": 11.3,
-      "max": 47
-    },
-    {
-      "name": "Vienna",
-      "avg": 10.3986,
-      "std": 3.99404,
-      "min": -6.4,
-      "max": 27.5
-    },
-    {
-      "name": "Ottawa",
-      "avg": 6.59056,
-      "std": 3.99404,
-      "min": -9.8,
-      "max": 23.3
-    },
-    {
-      "name": "Beirut",
-      "avg": 20.8946,
-      "std": 3.99411,
-      "min": 4.6,
-      "max": 37.6
-    },
-    {
-      "name": "Shanghai",
-      "avg": 16.7037,
-      "std": 3.99416,
-      "min": -2,
-      "max": 32.8
-    },
-    {
-      "name": "Dhaka",
-      "avg": 25.8937,
-      "std": 3.99418,
-      "min": 7.9,
-      "max": 43.6
-    },
-    {
-      "name": "Garissa",
-      "avg": 29.2806,
-      "std": 3.99431,
-      "min": 11.2,
-      "max": 46.5
-    },
-    {
-      "name": "Da Lat",
-      "avg": 17.9107,
-      "std": 3.99435,
-      "min": 1.8,
-      "max": 34.6
-    },
-    {
-      "name": "Chongqing",
-      "avg": 18.5896,
-      "std": 3.99448,
-      "min": 1.5,
-      "max": 36
-    },
-    {
-      "name": "Wellington",
-      "avg": 12.8989,
-      "std": 3.99451,
-      "min": -5.3,
-      "max": 29.6
-    },
-    {
-      "name": "Wau",
-      "avg": 27.8021,
-      "std": 3.99456,
-      "min": 10.7,
-      "max": 44.7
-    },
-    {
-      "name": "Barcelona",
-      "avg": 18.2148,
-      "std": 3.99461,
-      "min": 2.5,
-      "max": 33.9
-    },
-    {
-      "name": "Nakhon Ratchasima",
-      "avg": 27.2932,
-      "std": 3.9951,
-      "min": 8.5,
-      "max": 45
-    },
-    {
-      "name": "La Paz",
-      "avg": 23.7103,
-      "std": 3.99518,
-      "min": 5.7,
-      "max": 41.9
-    },
-    {
-      "name": "Yinchuan",
-      "avg": 8.98006,
-      "std": 3.99521,
-      "min": -9.6,
-      "max": 27.7
-    },
-    {
-      "name": "Dakar",
-      "avg": 23.9912,
-      "std": 3.99524,
-      "min": 6.3,
-      "max": 42.1
-    },
-    {
-      "name": "Suva",
-      "avg": 25.5939,
-      "std": 3.99526,
-      "min": 7.7,
-      "max": 44
-    },
-    {
-      "name": "Flores,  Petén",
-      "avg": 26.3962,
-      "std": 3.99529,
-      "min": 7.8,
-      "max": 44.2
-    },
-    {
-      "name": "Palmerston North",
-      "avg": 13.1941,
-      "std": 3.99534,
-      "min": -4.3,
-      "max": 29.1
-    },
-    {
-      "name": "Colombo",
-      "avg": 27.401,
-      "std": 3.99536,
-      "min": 9.5,
-      "max": 44.4
-    },
-    {
-      "name": "Brussels",
-      "avg": 10.5056,
-      "std": 3.9954,
-      "min": -6.8,
-      "max": 27.8
-    },
-    {
-      "name": "San Juan",
-      "avg": 27.1984,
-      "std": 3.99545,
-      "min": 10,
-      "max": 43.8
-    },
-    {
-      "name": "Belize City",
-      "avg": 26.6787,
-      "std": 3.99583,
-      "min": 9.8,
-      "max": 43.6
-    },
-    {
-      "name": "Singapore",
-      "avg": 26.9902,
-      "std": 3.99585,
-      "min": 10,
-      "max": 45.3
-    },
-    {
-      "name": "Cotonou",
-      "avg": 27.2086,
-      "std": 3.99594,
-      "min": 10.5,
-      "max": 44.6
-    },
-    {
-      "name": "Anadyr",
-      "avg": -6.89906,
-      "std": 3.99608,
-      "min": -24,
-      "max": 8.9
-    },
-    {
-      "name": "Brisbane",
-      "avg": 21.4081,
-      "std": 3.99615,
-      "min": 3.4,
-      "max": 38
-    },
-    {
-      "name": "Ifrane",
-      "avg": 11.3865,
-      "std": 3.99624,
-      "min": -6,
-      "max": 28.2
-    },
-    {
-      "name": "Hong Kong",
-      "avg": 23.2901,
-      "std": 3.99625,
-      "min": 5.4,
-      "max": 40.6
-    },
-    {
-      "name": "Parakou",
-      "avg": 26.7856,
-      "std": 3.99626,
-      "min": 8.4,
-      "max": 43.1
-    },
-    {
-      "name": "Virginia Beach",
-      "avg": 15.7929,
-      "std": 3.99628,
-      "min": -1.3,
-      "max": 34.1
-    },
-    {
-      "name": "Launceston",
-      "avg": 13.1002,
-      "std": 3.99641,
-      "min": -4.4,
-      "max": 30.4
-    },
-    {
-      "name": "Moscow",
-      "avg": 5.80845,
-      "std": 3.99642,
-      "min": -12.5,
-      "max": 24.8
-    },
-    {
-      "name": "Abidjan",
-      "avg": 25.9874,
-      "std": 3.99645,
-      "min": 7.6,
-      "max": 42.7
-    },
-    {
-      "name": "Vilnius",
-      "avg": 5.99872,
-      "std": 3.9966,
-      "min": -12.2,
-      "max": 27.6
-    },
-    {
-      "name": "Calgary",
-      "avg": 4.41254,
-      "std": 3.99661,
-      "min": -13.2,
-      "max": 21.5
-    },
-    {
-      "name": "San Diego",
-      "avg": 17.7789,
-      "std": 3.99665,
-      "min": -0.1,
-      "max": 36.6
-    },
-    {
-      "name": "Hargeisa",
-      "avg": 21.7,
-      "std": 3.99668,
-      "min": 5.3,
-      "max": 39.1
-    },
-    {
-      "name": "London",
-      "avg": 11.3084,
-      "std": 3.9968,
-      "min": -6.8,
-      "max": 28.2
-    },
-    {
-      "name": "Bloemfontein",
-      "avg": 15.5722,
-      "std": 3.99682,
-      "min": -3.4,
-      "max": 31.9
-    },
-    {
-      "name": "St. Louis",
-      "avg": 13.9077,
-      "std": 3.99687,
-      "min": -4.9,
-      "max": 31.5
-    },
-    {
-      "name": "Durban",
-      "avg": 20.6269,
-      "std": 3.99688,
-      "min": 2,
-      "max": 37.2
-    },
-    {
-      "name": "Birao",
-      "avg": 26.5001,
-      "std": 3.99711,
-      "min": 9.5,
-      "max": 45.8
-    },
-    {
-      "name": "Pittsburgh",
-      "avg": 10.7888,
-      "std": 3.99725,
-      "min": -5.2,
-      "max": 28.1
-    },
-    {
-      "name": "San Francisco",
-      "avg": 14.5908,
-      "std": 3.99726,
-      "min": -3.1,
-      "max": 30.4
-    },
-    {
-      "name": "Yakutsk",
-      "avg": -8.8173,
-      "std": 3.99737,
-      "min": -25.6,
-      "max": 7.8
-    },
-    {
-      "name": "San Antonio",
-      "avg": 20.804,
-      "std": 3.99741,
-      "min": 3.7,
-      "max": 38
-    },
-    {
-      "name": "Antsiranana",
-      "avg": 25.2094,
-      "std": 3.99742,
-      "min": 9,
-      "max": 41.9
-    },
-    {
-      "name": "Upington",
-      "avg": 20.3914,
-      "std": 3.99745,
-      "min": 3.3,
-      "max": 36.7
-    },
-    {
-      "name": "Veracruz",
-      "avg": 25.3919,
-      "std": 3.99748,
-      "min": 6,
-      "max": 41.9
-    },
-    {
-      "name": "New Orleans",
-      "avg": 20.6934,
-      "std": 3.99751,
-      "min": -1,
-      "max": 38.7
-    },
-    {
-      "name": "Suwałki",
-      "avg": 7.19728,
-      "std": 3.99757,
-      "min": -10.4,
-      "max": 26.2
-    },
-    {
-      "name": "Palm Springs",
-      "avg": 24.4826,
-      "std": 3.99758,
-      "min": 6.8,
-      "max": 42
-    },
-    {
-      "name": "Libreville",
-      "avg": 25.9191,
-      "std": 3.99762,
-      "min": 8.3,
-      "max": 42.8
-    },
-    {
-      "name": "Roseau",
-      "avg": 26.1951,
-      "std": 3.99768,
-      "min": 7.3,
-      "max": 43.5
-    },
-    {
-      "name": "Thiès",
-      "avg": 24.0248,
-      "std": 3.9977,
-      "min": 5.8,
-      "max": 41.5
-    },
-    {
-      "name": "Helsinki",
-      "avg": 5.89849,
-      "std": 3.99793,
-      "min": -11.2,
-      "max": 23.5
-    },
-    {
-      "name": "Busan",
-      "avg": 14.9989,
-      "std": 3.99796,
-      "min": -2.1,
-      "max": 31.7
-    },
-    {
-      "name": "Tabora",
-      "avg": 22.9896,
-      "std": 3.99801,
-      "min": 4.5,
-      "max": 40.7
-    },
-    {
-      "name": "Karonga",
-      "avg": 24.3996,
-      "std": 3.99817,
-      "min": 8.1,
-      "max": 40.8
-    },
-    {
-      "name": "Tegucigalpa",
-      "avg": 21.716,
-      "std": 3.99818,
-      "min": 4,
-      "max": 39.8
-    },
-    {
-      "name": "Charlotte",
-      "avg": 16.1059,
-      "std": 3.9982,
-      "min": 0.1,
-      "max": 33.9
-    },
-    {
-      "name": "Toamasina",
-      "avg": 23.4207,
-      "std": 3.99823,
-      "min": 7.1,
-      "max": 42.8
-    },
-    {
-      "name": "Indianapolis",
-      "avg": 11.7941,
-      "std": 3.99826,
-      "min": -4.7,
-      "max": 27.6
-    },
-    {
-      "name": "Lahore",
-      "avg": 24.3056,
-      "std": 3.99839,
-      "min": 6.8,
-      "max": 43.5
-    },
-    {
-      "name": "Seoul",
-      "avg": 12.4994,
-      "std": 3.99844,
-      "min": -6,
-      "max": 29.5
-    },
-    {
-      "name": "Mango",
-      "avg": 28.096,
-      "std": 3.99845,
-      "min": 12.3,
-      "max": 44.3
-    },
-    {
-      "name": "Miami",
-      "avg": 24.8977,
-      "std": 3.99846,
-      "min": 7.1,
-      "max": 41.6
-    },
-    {
-      "name": "Ségou",
-      "avg": 28.0016,
-      "std": 3.99851,
-      "min": 10,
-      "max": 46.1
-    },
-    {
-      "name": "Saint-Pierre",
-      "avg": 5.70164,
-      "std": 3.99851,
-      "min": -10.5,
-      "max": 24.3
-    },
-    {
-      "name": "Jos",
-      "avg": 22.8035,
-      "std": 3.99852,
-      "min": 5.2,
-      "max": 40.5
-    },
-    {
-      "name": "Batumi",
-      "avg": 14.0012,
-      "std": 3.99853,
-      "min": -4.2,
-      "max": 29.7
-    },
-    {
-      "name": "Villahermosa",
-      "avg": 27.122,
-      "std": 3.99858,
-      "min": 10.9,
-      "max": 44.1
-    },
-    {
-      "name": "Toronto",
-      "avg": 9.39251,
-      "std": 3.99859,
-      "min": -7.5,
-      "max": 28.2
-    },
-    {
-      "name": "Dolisie",
-      "avg": 23.9908,
-      "std": 3.99866,
-      "min": 6.5,
-      "max": 40.5
-    },
-    {
-      "name": "Madrid",
-      "avg": 15.0068,
-      "std": 3.99873,
-      "min": -2.7,
-      "max": 31.5
-    },
-    {
-      "name": "Bucharest",
-      "avg": 10.7874,
-      "std": 3.99875,
-      "min": -5.9,
-      "max": 28
-    },
-    {
-      "name": "Mandalay",
-      "avg": 28.0058,
-      "std": 3.99889,
-      "min": 9,
-      "max": 45.5
-    },
-    {
-      "name": "Sochi",
-      "avg": 14.1841,
-      "std": 3.99902,
-      "min": -4.3,
-      "max": 31.1
-    },
-    {
-      "name": "Mombasa",
-      "avg": 26.2909,
-      "std": 3.99903,
-      "min": 7,
-      "max": 43.1
-    },
-    {
-      "name": "Mahajanga",
-      "avg": 26.2972,
-      "std": 3.99904,
-      "min": 8.3,
-      "max": 45.2
-    },
-    {
-      "name": "Lubumbashi",
-      "avg": 20.7782,
-      "std": 3.99908,
-      "min": 3.8,
-      "max": 39.4
-    },
-    {
-      "name": "Moncton",
-      "avg": 6.10094,
-      "std": 3.99911,
-      "min": -11.9,
-      "max": 23.8
-    },
-    {
-      "name": "Cairns",
-      "avg": 24.9924,
-      "std": 3.99916,
-      "min": 8,
-      "max": 41.9
-    },
-    {
-      "name": "Assab",
-      "avg": 30.506,
-      "std": 3.99916,
-      "min": 13.5,
-      "max": 49.5
-    },
-    {
-      "name": "Cabo San Lucas",
-      "avg": 23.9002,
-      "std": 3.99918,
-      "min": 6.2,
-      "max": 40.3
-    },
-    {
-      "name": "Beijing",
-      "avg": 12.883,
-      "std": 3.99918,
-      "min": -7.1,
-      "max": 34.5
-    },
-    {
-      "name": "Pretoria",
-      "avg": 18.201,
-      "std": 3.99942,
-      "min": 0.1,
-      "max": 34.6
-    },
-    {
-      "name": "Algiers",
-      "avg": 18.2039,
-      "std": 3.99944,
-      "min": 0.4,
-      "max": 35.7
-    },
-    {
-      "name": "Pointe-Noire",
-      "avg": 26.0975,
-      "std": 3.99949,
-      "min": 8.4,
-      "max": 42.3
-    },
-    {
-      "name": "Bata",
-      "avg": 25.1182,
-      "std": 3.99953,
-      "min": 6.8,
-      "max": 42.2
-    },
-    {
-      "name": "Guangzhou",
-      "avg": 22.3983,
-      "std": 3.99969,
-      "min": 4.5,
-      "max": 38.9
-    },
-    {
-      "name": "Tirana",
-      "avg": 15.208,
-      "std": 3.99975,
-      "min": -4.4,
-      "max": 32.4
-    },
-    {
-      "name": "Manama",
-      "avg": 26.4962,
-      "std": 3.99975,
-      "min": 10.7,
-      "max": 44.9
-    },
-    {
-      "name": "Seville",
-      "avg": 19.1748,
-      "std": 3.9998,
-      "min": 0.2,
-      "max": 37.5
-    },
-    {
-      "name": "Petropavlovsk-Kamchatsky",
-      "avg": 1.88257,
-      "std": 3.99986,
-      "min": -14.9,
-      "max": 21.2
-    },
-    {
-      "name": "Perth",
-      "avg": 18.7204,
-      "std": 3.99991,
-      "min": 0.4,
-      "max": 37.6
-    },
-    {
-      "name": "Las Vegas",
-      "avg": 20.2953,
-      "std": 3.99992,
-      "min": 3.6,
-      "max": 37.2
-    },
-    {
-      "name": "Istanbul",
-      "avg": 13.9015,
-      "std": 3.99996,
-      "min": -3,
-      "max": 31
-    },
-    {
-      "name": "Almaty",
-      "avg": 9.96781,
-      "std": 3.99996,
-      "min": -7,
-      "max": 26
-    },
-    {
-      "name": "Dampier",
-      "avg": 26.4006,
-      "std": 3.99998,
-      "min": 10.1,
-      "max": 44.4
-    },
-    {
-      "name": "Heraklion",
-      "avg": 18.915,
-      "std": 4.00024,
-      "min": 0.8,
-      "max": 37.1
-    },
-    {
-      "name": "Anchorage",
-      "avg": 2.79416,
-      "std": 4.00024,
-      "min": -13,
-      "max": 20.9
-    },
-    {
-      "name": "Bouaké",
-      "avg": 26.0034,
-      "std": 4.00026,
-      "min": 9.2,
-      "max": 42.3
-    },
-    {
-      "name": "Bishkek",
-      "avg": 11.3023,
-      "std": 4.00034,
-      "min": -5.4,
-      "max": 27.5
-    },
-    {
-      "name": "New York City",
-      "avg": 12.884,
-      "std": 4.00035,
-      "min": -5.3,
-      "max": 30.5
-    },
-    {
-      "name": "Mogadishu",
-      "avg": 27.1026,
-      "std": 4.00045,
-      "min": 8.6,
-      "max": 44.9
-    },
-    {
-      "name": "Johannesburg",
-      "avg": 15.4821,
-      "std": 4.00055,
-      "min": -0.5,
-      "max": 33.4
-    },
-    {
-      "name": "Lisbon",
-      "avg": 17.5277,
-      "std": 4.00055,
-      "min": 0.6,
-      "max": 36.6
-    },
-    {
-      "name": "Monaco",
-      "avg": 16.4093,
-      "std": 4.00056,
-      "min": -2.3,
-      "max": 34.2
-    },
-    {
-      "name": "Yaoundé",
-      "avg": 23.8024,
-      "std": 4.00059,
-      "min": 4.6,
-      "max": 40.2
-    },
-    {
-      "name": "Lhasa",
-      "avg": 7.6108,
-      "std": 4.00068,
-      "min": -8.8,
-      "max": 24.8
-    },
-    {
-      "name": "Luanda",
-      "avg": 25.7783,
-      "std": 4.00068,
-      "min": 10.2,
-      "max": 42.8
-    },
-    {
-      "name": "Alexandria",
-      "avg": 19.9876,
-      "std": 4.00073,
-      "min": 4,
-      "max": 37.6
-    },
-    {
-      "name": "Ngaoundéré",
-      "avg": 22.0047,
-      "std": 4.00089,
-      "min": 5.3,
-      "max": 41.4
-    },
-    {
-      "name": "Rome",
-      "avg": 15.2123,
-      "std": 4.00101,
-      "min": -3,
-      "max": 32.3
-    },
-    {
-      "name": "Havana",
-      "avg": 25.2086,
-      "std": 4.00103,
-      "min": 7.8,
-      "max": 42.8
-    },
-    {
-      "name": "Bratislava",
-      "avg": 10.5121,
-      "std": 4.00107,
-      "min": -5.8,
-      "max": 28.3
-    },
-    {
-      "name": "Phnom Penh",
-      "avg": 28.3007,
-      "std": 4.00107,
-      "min": 11.3,
-      "max": 45.5
-    },
-    {
-      "name": "Tauranga",
-      "avg": 14.7968,
-      "std": 4.00107,
-      "min": -3.2,
-      "max": 31.6
-    },
-    {
-      "name": "Tucson",
-      "avg": 20.9207,
-      "std": 4.00108,
-      "min": 2.3,
-      "max": 39.3
-    },
-    {
-      "name": "Muscat",
-      "avg": 27.9942,
-      "std": 4.00115,
-      "min": 9.5,
-      "max": 44.2
-    },
-    {
-      "name": "Louisville",
-      "avg": 13.9084,
-      "std": 4.00116,
-      "min": -4.8,
-      "max": 31
-    },
-    {
-      "name": "Changsha",
-      "avg": 17.3828,
-      "std": 4.00126,
-      "min": -1.4,
-      "max": 34.5
-    },
-    {
-      "name": "Niamey",
-      "avg": 29.2858,
-      "std": 4.00127,
-      "min": 12.5,
-      "max": 48.7
-    },
-    {
-      "name": "Zürich",
-      "avg": 9.33524,
-      "std": 4.00133,
-      "min": -6.4,
-      "max": 25.7
-    },
-    {
-      "name": "Ouagadougou",
-      "avg": 28.3237,
-      "std": 4.00147,
-      "min": 10.7,
-      "max": 47.9
-    },
-    {
-      "name": "Port Vila",
-      "avg": 24.2869,
-      "std": 4.00149,
-      "min": 7.5,
-      "max": 40.3
-    },
-    {
-      "name": "Aden",
-      "avg": 29.0962,
-      "std": 4.0015,
-      "min": 12.1,
-      "max": 47.5
-    },
-    {
-      "name": "İzmir",
-      "avg": 17.8826,
-      "std": 4.0016,
-      "min": -1,
-      "max": 33.9
-    },
-    {
-      "name": "Thessaloniki",
-      "avg": 16.0028,
-      "std": 4.00161,
-      "min": -0.1,
-      "max": 31.7
-    },
-    {
-      "name": "Mexicali",
-      "avg": 23.0742,
-      "std": 4.00169,
-      "min": 4.6,
-      "max": 39.2
-    },
-    {
-      "name": "Cape Town",
-      "avg": 16.215,
-      "std": 4.0017,
-      "min": -0.7,
-      "max": 32.9
-    },
-    {
-      "name": "Palermo",
-      "avg": 18.5179,
-      "std": 4.0017,
-      "min": 1.3,
-      "max": 37.4
-    },
-    {
-      "name": "Mzuzu",
-      "avg": 17.7005,
-      "std": 4.00176,
-      "min": 0.5,
-      "max": 34.6
-    },
-    {
-      "name": "Brazzaville",
-      "avg": 24.9995,
-      "std": 4.00187,
-      "min": 8.7,
-      "max": 43.1
-    },
-    {
-      "name": "Praia",
-      "avg": 24.3905,
-      "std": 4.002,
-      "min": 7.2,
-      "max": 42
-    },
-    {
-      "name": "Dushanbe",
-      "avg": 14.7007,
-      "std": 4.00211,
-      "min": -2.6,
-      "max": 32.9
-    },
-    {
-      "name": "Lviv",
-      "avg": 7.79811,
-      "std": 4.00216,
-      "min": -9.3,
-      "max": 24.2
-    },
-    {
-      "name": "Andorra la Vella",
-      "avg": 9.79357,
-      "std": 4.00221,
-      "min": -8.7,
-      "max": 26.5
-    },
-    {
-      "name": "Bujumbura",
-      "avg": 23.7789,
-      "std": 4.00232,
-      "min": 6.4,
-      "max": 42.1
-    },
-    {
-      "name": "Zanzibar City",
-      "avg": 25.9862,
-      "std": 4.00242,
-      "min": 7.2,
-      "max": 42.9
-    },
-    {
-      "name": "Timbuktu",
-      "avg": 28.0033,
-      "std": 4.00264,
-      "min": 9.4,
-      "max": 46.4
-    },
-    {
-      "name": "Kuwait City",
-      "avg": 25.6741,
-      "std": 4.00266,
-      "min": 7.9,
-      "max": 41.8
-    },
-    {
-      "name": "Chittagong",
-      "avg": 25.8994,
-      "std": 4.0028,
-      "min": 7.6,
-      "max": 42.5
-    },
-    {
-      "name": "Sydney",
-      "avg": 17.6942,
-      "std": 4.00288,
-      "min": 1.3,
-      "max": 34.3
-    },
-    {
-      "name": "Port-Gentil",
-      "avg": 25.9727,
-      "std": 4.00291,
-      "min": 9.4,
-      "max": 42.4
-    },
-    {
-      "name": "Odienné",
-      "avg": 25.9668,
-      "std": 4.00293,
-      "min": 6.8,
-      "max": 43.1
-    },
-    {
-      "name": "Antananarivo",
-      "avg": 17.8913,
-      "std": 4.00311,
-      "min": 0.5,
-      "max": 35.1
-    },
-    {
-      "name": "Oranjestad",
-      "avg": 28.1097,
-      "std": 4.0032,
-      "min": 11.7,
-      "max": 45.3
-    },
-    {
-      "name": "Columbus",
-      "avg": 11.6841,
-      "std": 4.00321,
-      "min": -7.4,
-      "max": 28.6
-    },
-    {
-      "name": "Sana'a",
-      "avg": 20.0118,
-      "std": 4.00321,
-      "min": 3.2,
-      "max": 37.7
-    },
-    {
-      "name": "Arkhangelsk",
-      "avg": 1.31863,
-      "std": 4.00354,
-      "min": -16,
-      "max": 19.5
-    },
-    {
-      "name": "Vladivostok",
-      "avg": 4.9051,
-      "std": 4.00354,
-      "min": -12.8,
-      "max": 21.4
-    },
-    {
-      "name": "Ghanzi",
-      "avg": 21.3937,
-      "std": 4.00356,
-      "min": 4.8,
-      "max": 39.5
-    },
-    {
-      "name": "El Paso",
-      "avg": 18.1037,
-      "std": 4.00369,
-      "min": -0.8,
-      "max": 36
-    },
-    {
-      "name": "Warsaw",
-      "avg": 8.49156,
-      "std": 4.00373,
-      "min": -9.1,
-      "max": 25.9
-    },
-    {
-      "name": "Wichita",
-      "avg": 13.9019,
-      "std": 4.00384,
-      "min": -4.9,
-      "max": 31.9
-    },
-    {
-      "name": "Vancouver",
-      "avg": 10.3877,
-      "std": 4.00385,
-      "min": -6.1,
-      "max": 27.6
-    },
-    {
-      "name": "Kandi",
-      "avg": 27.7052,
-      "std": 4.00394,
-      "min": 8.5,
-      "max": 45.7
-    },
-    {
-      "name": "Chicago",
-      "avg": 9.80925,
-      "std": 4.00401,
-      "min": -5.4,
-      "max": 28.6
-    },
-    {
-      "name": "Tripoli",
-      "avg": 20.0102,
-      "std": 4.00405,
-      "min": 1.3,
-      "max": 36.5
-    },
-    {
-      "name": "Monterrey",
-      "avg": 22.2915,
-      "std": 4.00411,
-      "min": 5.7,
-      "max": 38.2
-    },
-    {
-      "name": "Hamilton",
-      "avg": 13.8108,
-      "std": 4.00411,
-      "min": -3.2,
-      "max": 32.2
-    },
-    {
-      "name": "Maun",
-      "avg": 22.3918,
-      "std": 4.00427,
-      "min": 6.5,
-      "max": 40.7
-    },
-    {
-      "name": "Kyoto",
-      "avg": 15.7901,
-      "std": 4.00435,
-      "min": -1.8,
-      "max": 35.9
-    },
-    {
-      "name": "Boston",
-      "avg": 10.9011,
-      "std": 4.00449,
-      "min": -6.2,
-      "max": 28.1
-    },
-    {
-      "name": "Rabat",
-      "avg": 17.1798,
-      "std": 4.00451,
-      "min": -2.9,
-      "max": 33.8
-    },
-    {
-      "name": "Baguio",
-      "avg": 19.4938,
-      "std": 4.00452,
-      "min": 2,
-      "max": 37.5
-    },
-    {
-      "name": "Tamanrasset",
-      "avg": 21.7061,
-      "std": 4.00461,
-      "min": 5,
-      "max": 39.2
-    },
-    {
-      "name": "Saint Petersburg",
-      "avg": 5.8067,
-      "std": 4.00461,
-      "min": -12.8,
-      "max": 23
-    },
-    {
-      "name": "Burnie",
-      "avg": 13.1252,
-      "std": 4.00473,
-      "min": -3.9,
-      "max": 31.3
-    },
-    {
-      "name": "Hobart",
-      "avg": 12.7205,
-      "std": 4.00474,
-      "min": -6,
-      "max": 30
-    },
-    {
-      "name": "Lagos",
-      "avg": 26.811,
-      "std": 4.00488,
-      "min": 8.6,
-      "max": 42.7
-    },
-    {
-      "name": "Dublin",
-      "avg": 9.79161,
-      "std": 4.00491,
-      "min": -7.5,
-      "max": 25.3
-    },
-    {
-      "name": "Alexandra",
-      "avg": 10.9887,
-      "std": 4.00491,
-      "min": -9.5,
-      "max": 29
-    },
-    {
-      "name": "Kunming",
-      "avg": 15.6643,
-      "std": 4.00506,
-      "min": -2.2,
-      "max": 33.1
-    },
-    {
-      "name": "Paris",
-      "avg": 12.3142,
-      "std": 4.00509,
-      "min": -4.2,
-      "max": 29.7
-    },
-    {
-      "name": "Khartoum",
-      "avg": 29.9249,
-      "std": 4.0052,
-      "min": 11.4,
-      "max": 48.2
-    },
-    {
-      "name": "Vaduz",
-      "avg": 10.1099,
-      "std": 4.00529,
-      "min": -8.3,
-      "max": 28.2
-    },
-    {
-      "name": "Kathmandu",
-      "avg": 18.3022,
-      "std": 4.00534,
-      "min": 0.9,
-      "max": 35.2
-    },
-    {
-      "name": "Nashville",
-      "avg": 15.4169,
-      "std": 4.00538,
-      "min": -2.4,
-      "max": 35.6
-    },
-    {
-      "name": "Chiang Mai",
-      "avg": 25.8059,
-      "std": 4.00542,
-      "min": 6.7,
-      "max": 43.3
-    },
-    {
-      "name": "Xi'an",
-      "avg": 14.1009,
-      "std": 4.00544,
-      "min": -4.3,
-      "max": 31.9
-    },
-    {
-      "name": "Napoli",
-      "avg": 15.9266,
-      "std": 4.00545,
-      "min": -1.9,
-      "max": 32.2
-    },
-    {
-      "name": "Bergen",
-      "avg": 7.69328,
-      "std": 4.00552,
-      "min": -8.8,
-      "max": 25.7
-    },
-    {
-      "name": "Dubai",
-      "avg": 26.9072,
-      "std": 4.00567,
-      "min": 10.3,
-      "max": 43.5
-    },
-    {
-      "name": "Melbourne",
-      "avg": 15.0883,
-      "std": 4.00567,
-      "min": -2,
-      "max": 32
-    },
-    {
-      "name": "Addis Ababa",
-      "avg": 15.9888,
-      "std": 4.00572,
-      "min": -1.2,
-      "max": 33.7
-    },
-    {
-      "name": "Dallas",
-      "avg": 18.9984,
-      "std": 4.00577,
-      "min": -0.7,
-      "max": 37.9
-    },
-    {
-      "name": "Tunis",
-      "avg": 18.3845,
-      "std": 4.00582,
-      "min": 0.3,
-      "max": 34.7
-    },
-    {
-      "name": "Minsk",
-      "avg": 6.69853,
-      "std": 4.00596,
-      "min": -11.4,
-      "max": 23.1
-    },
-    {
-      "name": "Adelaide",
-      "avg": 17.2996,
-      "std": 4.00598,
-      "min": -2,
-      "max": 34.6
-    },
-    {
-      "name": "Livingstone",
-      "avg": 21.8026,
-      "std": 4.00601,
-      "min": 5,
-      "max": 38.5
-    },
-    {
-      "name": "Bosaso",
-      "avg": 29.9962,
-      "std": 4.00614,
-      "min": 12.2,
-      "max": 47.3
-    },
-    {
-      "name": "Tel Aviv",
-      "avg": 20.001,
-      "std": 4.00621,
-      "min": 3.8,
-      "max": 36.8
-    },
-    {
-      "name": "St. John's",
-      "avg": 5.0084,
-      "std": 4.00627,
-      "min": -11.4,
-      "max": 23.1
-    },
-    {
-      "name": "Naha",
-      "avg": 23.1148,
-      "std": 4.00633,
-      "min": 6.8,
-      "max": 41.1
-    },
-    {
-      "name": "Nouadhibou",
-      "avg": 21.2975,
-      "std": 4.00635,
-      "min": 3.9,
-      "max": 39.1
-    },
-    {
-      "name": "Kyiv",
-      "avg": 8.37316,
-      "std": 4.00643,
-      "min": -8.3,
-      "max": 26.7
-    },
-    {
-      "name": "Budapest",
-      "avg": 11.2953,
-      "std": 4.00648,
-      "min": -7.4,
-      "max": 28.2
-    },
-    {
-      "name": "Tromsø",
-      "avg": 2.92235,
-      "std": 4.00652,
-      "min": -14.3,
-      "max": 20.2
-    },
-    {
-      "name": "Odesa",
-      "avg": 10.7022,
-      "std": 4.00652,
-      "min": -8.1,
-      "max": 28.3
-    },
-    {
-      "name": "Berlin",
-      "avg": 10.2869,
-      "std": 4.00655,
-      "min": -8.1,
-      "max": 27.5
-    },
-    {
-      "name": "Kumasi",
-      "avg": 26.0123,
-      "std": 4.00662,
-      "min": 9.2,
-      "max": 42
-    },
-    {
-      "name": "Port Sudan",
-      "avg": 28.3958,
-      "std": 4.00663,
-      "min": 10.5,
-      "max": 47.5
-    },
-    {
-      "name": "Sarajevo",
-      "avg": 10.1125,
-      "std": 4.00666,
-      "min": -7.7,
-      "max": 26.1
-    },
-    {
-      "name": "Valletta",
-      "avg": 18.8093,
-      "std": 4.0067,
-      "min": 1,
-      "max": 35.8
-    },
-    {
-      "name": "Makassar",
-      "avg": 26.7277,
-      "std": 4.00674,
-      "min": 8.3,
-      "max": 42.2
-    },
-    {
-      "name": "Auckland",
-      "avg": 15.2014,
-      "std": 4.00686,
-      "min": -2.5,
-      "max": 31.7
-    },
-    {
-      "name": "Lake Tekapo",
-      "avg": 8.68832,
-      "std": 4.00706,
-      "min": -8.6,
-      "max": 27.3
-    },
-    {
-      "name": "Austin",
-      "avg": 20.7122,
-      "std": 4.00709,
-      "min": 4.1,
-      "max": 37.1
-    },
-    {
-      "name": "George Town",
-      "avg": 27.8976,
-      "std": 4.00723,
-      "min": 9.7,
-      "max": 48.4
-    },
-    {
-      "name": "Detroit",
-      "avg": 9.98651,
-      "std": 4.00769,
-      "min": -7.1,
-      "max": 28.5
-    },
-    {
-      "name": "Canberra",
-      "avg": 13.094,
-      "std": 4.00771,
-      "min": -5.5,
-      "max": 32.8
-    },
-    {
-      "name": "Novosibirsk",
-      "avg": 1.69894,
-      "std": 4.00782,
-      "min": -16.7,
-      "max": 19.7
-    },
-    {
-      "name": "Ljubljana",
-      "avg": 10.9046,
-      "std": 4.00787,
-      "min": -7.2,
-      "max": 28.2
-    },
-    {
-      "name": "Gjoa Haven",
-      "avg": -14.4279,
-      "std": 4.00807,
-      "min": -31.2,
-      "max": 4
-    },
-    {
-      "name": "Nairobi",
-      "avg": 17.784,
-      "std": 4.00808,
-      "min": -0.5,
-      "max": 37.6
-    },
-    {
-      "name": "Niigata",
-      "avg": 13.9012,
-      "std": 4.00809,
-      "min": -5,
-      "max": 32.8
-    },
-    {
-      "name": "Luxembourg City",
-      "avg": 9.31172,
-      "std": 4.00809,
-      "min": -7.3,
-      "max": 28
-    },
-    {
-      "name": "Dodoma",
-      "avg": 22.6984,
-      "std": 4.0081,
-      "min": 7.3,
-      "max": 41.9
-    },
-    {
-      "name": "Las Palmas de Gran Canaria",
-      "avg": 21.2248,
-      "std": 4.00824,
-      "min": 2.4,
-      "max": 38
-    },
-    {
-      "name": "Amsterdam",
-      "avg": 10.2049,
-      "std": 4.00828,
-      "min": -8.5,
-      "max": 28.2
-    },
-    {
-      "name": "Nicosia",
-      "avg": 19.6958,
-      "std": 4.00849,
-      "min": 0.6,
-      "max": 36.8
-    },
-    {
-      "name": "Rostov-on-Don",
-      "avg": 9.88063,
-      "std": 4.00853,
-      "min": -6.5,
-      "max": 26.8
-    },
-    {
-      "name": "Kankan",
-      "avg": 26.5102,
-      "std": 4.00856,
-      "min": 9.4,
-      "max": 44.2
-    },
-    {
-      "name": "Baltimore",
-      "avg": 13.1198,
-      "std": 4.00881,
-      "min": -5.1,
-      "max": 28.8
-    },
-    {
-      "name": "Banjul",
-      "avg": 26.0159,
-      "std": 4.00889,
-      "min": 8.4,
-      "max": 43.3
-    },
-    {
-      "name": "Dar es Salaam",
-      "avg": 25.8362,
-      "std": 4.00924,
-      "min": 9.1,
-      "max": 42.5
-    },
-    {
-      "name": "San Jose",
-      "avg": 16.3998,
-      "std": 4.00932,
-      "min": -3.8,
-      "max": 35.1
-    },
-    {
-      "name": "Jayapura",
-      "avg": 27.0061,
-      "std": 4.00935,
-      "min": 7.9,
-      "max": 45.7
-    },
-    {
-      "name": "Oulu",
-      "avg": 2.69015,
-      "std": 4.00937,
-      "min": -14.1,
-      "max": 18.7
-    },
-    {
-      "name": "Sacramento",
-      "avg": 16.307,
-      "std": 4.00954,
-      "min": -4.1,
-      "max": 32.3
-    },
-    {
-      "name": "Hanoi",
-      "avg": 23.6053,
-      "std": 4.00957,
-      "min": 2.9,
-      "max": 40.9
-    },
-    {
-      "name": "Erbil",
-      "avg": 19.4929,
-      "std": 4.00965,
-      "min": 3.2,
-      "max": 39.3
-    },
-    {
-      "name": "Nuuk",
-      "avg": -1.39507,
-      "std": 4.00983,
-      "min": -19.2,
-      "max": 16.2
-    },
-    {
-      "name": "Valencia",
-      "avg": 18.2813,
-      "std": 4.00984,
-      "min": 2.3,
-      "max": 36.1
-    },
-    {
-      "name": "Pontianak",
-      "avg": 27.6967,
-      "std": 4.00987,
-      "min": 10.6,
-      "max": 45.7
-    },
-    {
-      "name": "Tokyo",
-      "avg": 15.409,
-      "std": 4.00999,
-      "min": -2.2,
-      "max": 32.5
-    },
-    {
-      "name": "Dili",
-      "avg": 26.5993,
-      "std": 4.01001,
-      "min": 10.7,
-      "max": 44.4
-    },
-    {
-      "name": "Reggane",
-      "avg": 28.3107,
-      "std": 4.0101,
-      "min": 10.7,
-      "max": 46.9
-    },
-    {
-      "name": "Seattle",
-      "avg": 11.2849,
-      "std": 4.01014,
-      "min": -5.4,
-      "max": 27.9
-    },
-    {
-      "name": "Dunedin",
-      "avg": 11.1237,
-      "std": 4.01015,
-      "min": -5,
-      "max": 28.2
-    },
-    {
-      "name": "Damascus",
-      "avg": 16.994,
-      "std": 4.01037,
-      "min": 0.7,
-      "max": 33.7
-    },
-    {
-      "name": "Honiara",
-      "avg": 26.4866,
-      "std": 4.0105,
-      "min": 9.9,
-      "max": 43.3
-    },
-    {
-      "name": "Blantyre",
-      "avg": 22.1997,
-      "std": 4.0105,
-      "min": 5.2,
-      "max": 39.9
-    },
-    {
-      "name": "Kingston",
-      "avg": 27.3976,
-      "std": 4.01073,
-      "min": 10,
-      "max": 43.3
-    },
-    {
-      "name": "Mumbai",
-      "avg": 27.0985,
-      "std": 4.01082,
-      "min": 10,
-      "max": 43.7
-    },
-    {
-      "name": "Tallinn",
-      "avg": 6.4222,
-      "std": 4.01088,
-      "min": -10.7,
-      "max": 22.6
-    },
-    {
-      "name": "Bamako",
-      "avg": 27.8087,
-      "std": 4.01105,
-      "min": 11.7,
-      "max": 45.3
-    },
-    {
-      "name": "Chihuahua",
-      "avg": 18.603,
-      "std": 4.01109,
-      "min": 2.1,
-      "max": 36.4
-    },
-    {
-      "name": "Tashkent",
-      "avg": 14.7864,
-      "std": 4.01131,
-      "min": -1.8,
-      "max": 32.4
-    },
-    {
-      "name": "Napier",
-      "avg": 14.6021,
-      "std": 4.01152,
-      "min": -3.9,
-      "max": 32.6
-    },
-    {
-      "name": "Bissau",
-      "avg": 27.0149,
-      "std": 4.01161,
-      "min": 9.9,
-      "max": 44.3
-    },
-    {
-      "name": "Medan",
-      "avg": 26.5022,
-      "std": 4.01164,
-      "min": 9.6,
-      "max": 43.3
-    },
-    {
-      "name": "Malabo",
-      "avg": 26.3136,
-      "std": 4.01177,
-      "min": 3.8,
-      "max": 46.5
-    },
-    {
-      "name": "Douala",
-      "avg": 26.7035,
-      "std": 4.01182,
-      "min": 9.7,
-      "max": 43.8
-    },
-    {
-      "name": "Port Moresby",
-      "avg": 26.8821,
-      "std": 4.01194,
-      "min": 7,
-      "max": 44.4
-    },
-    {
-      "name": "Denver",
-      "avg": 10.3897,
-      "std": 4.01206,
-      "min": -6,
-      "max": 29.2
-    },
-    {
-      "name": "Sokoto",
-      "avg": 27.9981,
-      "std": 4.01212,
-      "min": 10,
-      "max": 43.9
-    },
-    {
-      "name": "Edmonton",
-      "avg": 4.18768,
-      "std": 4.01212,
-      "min": -12.9,
-      "max": 20.5
-    },
-    {
-      "name": "Palembang",
-      "avg": 27.3205,
-      "std": 4.01265,
-      "min": 9.1,
-      "max": 44.2
-    },
-    {
-      "name": "Ulaanbaatar",
-      "avg": -0.380126,
-      "std": 4.01275,
-      "min": -17.3,
-      "max": 18.3
-    },
-    {
-      "name": "Marrakesh",
-      "avg": 19.5852,
-      "std": 4.0128,
-      "min": 2,
-      "max": 38
-    },
-    {
-      "name": "Asmara",
-      "avg": 15.5831,
-      "std": 4.01281,
-      "min": -2.8,
-      "max": 32.1
-    },
-    {
-      "name": "Albuquerque",
-      "avg": 14.0027,
-      "std": 4.01309,
-      "min": -2.1,
-      "max": 30.9
-    },
-    {
-      "name": "Tbilisi",
-      "avg": 12.8922,
-      "std": 4.0132,
-      "min": -4,
-      "max": 32.1
-    },
-    {
-      "name": "Chișinău",
-      "avg": 10.2079,
-      "std": 4.01322,
-      "min": -7.8,
-      "max": 28.3
-    },
-    {
-      "name": "Sofia",
-      "avg": 10.6279,
-      "std": 4.01328,
-      "min": -7.3,
-      "max": 26.9
-    },
-    {
-      "name": "Kabul",
-      "avg": 12.1018,
-      "std": 4.01362,
-      "min": -6.3,
-      "max": 29.3
-    },
-    {
-      "name": "Taipei",
-      "avg": 23.0098,
-      "std": 4.01383,
-      "min": 6.2,
-      "max": 40.3
-    },
-    {
-      "name": "Tehran",
-      "avg": 16.9909,
-      "std": 4.01402,
-      "min": 0,
-      "max": 35.6
-    },
-    {
-      "name": "Kano",
-      "avg": 26.4029,
-      "std": 4.01415,
-      "min": 8.1,
-      "max": 45.8
-    },
-    {
-      "name": "Lomé",
-      "avg": 26.8997,
-      "std": 4.01425,
-      "min": 9.2,
-      "max": 45.1
-    },
-    {
-      "name": "Mexico City",
-      "avg": 17.5227,
-      "std": 4.01434,
-      "min": -1.5,
-      "max": 35.6
-    },
-    {
-      "name": "Jakarta",
-      "avg": 26.6961,
-      "std": 4.01448,
-      "min": 9.4,
-      "max": 44.3
-    },
-    {
-      "name": "Iqaluit",
-      "avg": -9.32195,
-      "std": 4.01448,
-      "min": -27.5,
-      "max": 7.5
-    },
-    {
-      "name": "Alice Springs",
-      "avg": 20.995,
-      "std": 4.01451,
-      "min": 4.5,
-      "max": 38.6
-    },
-    {
-      "name": "Copenhagen",
-      "avg": 9.08971,
-      "std": 4.01454,
-      "min": -8.9,
-      "max": 26.1
-    },
-    {
-      "name": "Managua",
-      "avg": 27.3081,
-      "std": 4.01494,
-      "min": 9,
-      "max": 46.3
-    },
-    {
-      "name": "Winnipeg",
-      "avg": 3.01325,
-      "std": 4.01495,
-      "min": -15.6,
-      "max": 21.4
-    },
-    {
-      "name": "Nassau",
-      "avg": 24.5969,
-      "std": 4.01508,
-      "min": 7.5,
-      "max": 42.2
-    },
-    {
-      "name": "Kinshasa",
-      "avg": 25.3137,
-      "std": 4.01514,
-      "min": 7.4,
-      "max": 43.5
-    },
-    {
-      "name": "Tijuana",
-      "avg": 17.8134,
-      "std": 4.0155,
-      "min": 1.7,
-      "max": 34.1
-    },
-    {
-      "name": "Gaborone",
-      "avg": 20.993,
-      "std": 4.01608,
-      "min": 3.7,
-      "max": 38.8
-    },
-    {
-      "name": "Bulawayo",
-      "avg": 18.9151,
-      "std": 4.01616,
-      "min": 1.8,
-      "max": 37.5
-    },
-    {
-      "name": "Pyongyang",
-      "avg": 10.7865,
-      "std": 4.01619,
-      "min": -8.8,
-      "max": 27.4
-    },
-    {
-      "name": "Cracow",
-      "avg": 9.32379,
-      "std": 4.0165,
-      "min": -8.9,
-      "max": 27.5
-    },
-    {
-      "name": "Makurdi",
-      "avg": 26.0085,
-      "std": 4.01677,
-      "min": 9.2,
-      "max": 42.5
-    },
-    {
-      "name": "Harbin",
-      "avg": 4.99733,
-      "std": 4.01727,
-      "min": -11.3,
-      "max": 21.7
-    },
-    {
-      "name": "Kansas City",
-      "avg": 12.514,
-      "std": 4.01727,
-      "min": -6,
-      "max": 30.9
-    },
-    {
-      "name": "Ouarzazate",
-      "avg": 18.8865,
-      "std": 4.01759,
-      "min": 1.8,
-      "max": 36
-    },
-    {
-      "name": "Frankfurt",
-      "avg": 10.5793,
-      "std": 4.0182,
-      "min": -6.2,
-      "max": 27.4
-    },
-    {
-      "name": "Kuala Lumpur",
-      "avg": 27.2984,
-      "std": 4.01866,
-      "min": 8.6,
-      "max": 44.6
-    },
-    {
-      "name": "Montreal",
-      "avg": 6.78819,
-      "std": 4.0189,
-      "min": -9.8,
-      "max": 28.2
-    },
-    {
-      "name": "Malé",
-      "avg": 28.0165,
-      "std": 4.01894,
-      "min": 8.6,
-      "max": 47.9
-    },
-    {
-      "name": "Manila",
-      "avg": 28.3924,
-      "std": 4.01909,
-      "min": 12.7,
-      "max": 47.1
-    },
-    {
-      "name": "Harare",
-      "avg": 18.4046,
-      "std": 4.01947,
-      "min": 1.7,
-      "max": 34.3
-    },
-    {
-      "name": "Guadalajara",
-      "avg": 20.9232,
-      "std": 4.01957,
-      "min": 1.8,
-      "max": 39
-    },
-    {
-      "name": "Toliara",
-      "avg": 24.0983,
-      "std": 4.0208,
-      "min": 3.6,
-      "max": 40.1
-    },
-    {
-      "name": "Riga",
-      "avg": 6.19875,
-      "std": 4.02254,
-      "min": -10.9,
-      "max": 23.2
-    },
-    {
-      "name": "Fairbanks",
-      "avg": -2.31782,
-      "std": 4.0228,
-      "min": -19.3,
-      "max": 14.9
-    },
-    {
-      "name": "Vientiane",
-      "avg": 25.9216,
-      "std": 4.02417,
-      "min": 9.1,
-      "max": 43.7
-    },
-    {
-      "name": "Sapporo",
-      "avg": 8.91533,
-      "std": 4.02512,
-      "min": -7.6,
-      "max": 29.4
-    },
-    {
-      "name": "Wrocław",
-      "avg": 9.59826,
-      "std": 4.0255,
-      "min": -10,
-      "max": 27.2
-    },
-    {
-      "name": "Panama City",
-      "avg": 27.992,
-      "std": 4.0283,
-      "min": 10.1,
-      "max": 46.2
-    }
-  ]
-}
+{"cities":[
+{"name":"Philadelphia","avg":13.20498307,"std":3.971169271,"min":-2.8,"max":28.8},
+{"name":"Bangui","avg":25.98021263,"std":3.974829651,"min":7.5,"max":43.1},
+{"name":"Denpasar","avg":23.72175523,"std":3.975795589,"min":5.8,"max":39.7},
+{"name":"Santo Domingo","avg":25.89743103,"std":3.978335774,"min":10.3,"max":43.5},
+{"name":"Mek'ele","avg":22.69190785,"std":3.978594002,"min":5.6,"max":40.3},
+{"name":"Fianarantsoa","avg":17.88857643,"std":3.979302093,"min":-0.5,"max":35.3},
+{"name":"Memphis","avg":17.20952965,"std":3.980087495,"min":0.2,"max":34.5},
+{"name":"Entebbe","avg":21.00498277,"std":3.980453443,"min":5.1,"max":38.6},
+{"name":"Oslo","avg":5.704225936,"std":3.981029824,"min":-12.7,"max":23.0},
+{"name":"Porto","avg":15.69793986,"std":3.981796859,"min":-1.0,"max":32.5},
+{"name":"Rangpur","avg":24.39863124,"std":3.982038683,"min":7.8,"max":42.2},
+{"name":"Fresno","avg":17.88320849,"std":3.982105708,"min":1.6,"max":35.0},
+{"name":"Kampala","avg":19.98774363,"std":3.983063359,"min":3.7,"max":38.8},
+{"name":"Los Angeles","avg":18.59671451,"std":3.983380989,"min":1.6,"max":34.2},
+{"name":"Baghdad","avg":22.76772929,"std":3.983800012,"min":5.8,"max":41.9},
+{"name":"Benghazi","avg":19.88240881,"std":3.984505751,"min":2.7,"max":37.8},
+{"name":"Willemstad","avg":27.98840899,"std":3.9847287,"min":11.7,"max":45.6},
+{"name":"Abéché","avg":29.39748005,"std":3.984826027,"min":12.2,"max":48.4},
+{"name":"Edinburgh","avg":9.307998472,"std":3.984833213,"min":-9.3,"max":25.5},
+{"name":"Bangkok","avg":28.58177109,"std":3.985021837,"min":12.7,"max":44.9},
+{"name":"Baku","avg":15.08352642,"std":3.985181769,"min":-4.5,"max":32.6},
+{"name":"San Salvador","avg":23.08346401,"std":3.985216247,"min":5.3,"max":39.8},
+{"name":"Gagnoa","avg":26.0075572,"std":3.985518386,"min":9.3,"max":43.8},
+{"name":"Riyadh","avg":25.97643924,"std":3.985541951,"min":8.6,"max":44.0},
+{"name":"Oklahoma City","avg":15.87448643,"std":3.985596716,"min":-1.2,"max":33.2},
+{"name":"Honolulu","avg":25.40454589,"std":3.985787307,"min":9.3,"max":42.0},
+{"name":"Hiroshima","avg":16.30850799,"std":3.985923967,"min":-0.6,"max":33.9},
+{"name":"Jacksonville","avg":20.28611302,"std":3.985960895,"min":2.5,"max":38.5},
+{"name":"Lyon","avg":12.50290524,"std":3.986148116,"min":-5.8,"max":30.0},
+{"name":"Maputo","avg":22.78452104,"std":3.986159584,"min":5.8,"max":39.2},
+{"name":"Washington, D.C.","avg":14.60149042,"std":3.986165226,"min":-4.1,"max":31.3},
+{"name":"Bordeaux","avg":14.21747487,"std":3.986341878,"min":-4.5,"max":32.6},
+{"name":"Christchurch","avg":12.19661699,"std":3.986405674,"min":-4.0,"max":29.7},
+{"name":"Kuopio","avg":3.392597234,"std":3.986655071,"min":-15.5,"max":21.0},
+{"name":"Nouakchott","avg":25.69028893,"std":3.986737936,"min":8.8,"max":42.8},
+{"name":"Tamale","avg":27.88990226,"std":3.986874145,"min":11.2,"max":45.6},
+{"name":"Cairo","avg":21.38037443,"std":3.987408053,"min":3.8,"max":39.0},
+{"name":"Tampa","avg":22.91704341,"std":3.987422002,"min":4.6,"max":41.4},
+{"name":"Phoenix","avg":23.90121959,"std":3.987673225,"min":4.3,"max":42.5},
+{"name":"Podgorica","avg":15.30194797,"std":3.987808092,"min":-4.7,"max":32.8},
+{"name":"Juba","avg":27.79201811,"std":3.987913897,"min":11.4,"max":45.8},
+{"name":"Boise","avg":11.42167711,"std":3.9879407,"min":-5.0,"max":27.3},
+{"name":"Milan","avg":13.01480677,"std":3.988061025,"min":-3.5,"max":29.9},
+{"name":"Toluca","avg":12.4045388,"std":3.988079044,"min":-4.4,"max":30.3},
+{"name":"Ndola","avg":20.30413778,"std":3.988194557,"min":3.4,"max":36.9},
+{"name":"Ouahigouya","avg":28.59686553,"std":3.988226434,"min":12.0,"max":46.3},
+{"name":"Astana","avg":3.484989658,"std":3.988370164,"min":-13.5,"max":20.1},
+{"name":"Abha","avg":17.99567244,"std":3.988394499,"min":-0.5,"max":35.0},
+{"name":"Split","avg":16.09381951,"std":3.988500934,"min":-0.4,"max":33.6},
+{"name":"Saskatoon","avg":3.277522361,"std":3.988682519,"min":-13.3,"max":19.9},
+{"name":"Guatemala City","avg":20.39305991,"std":3.988809111,"min":1.5,"max":37.8},
+{"name":"Reykjavík","avg":4.289499072,"std":3.989034025,"min":-13.5,"max":23.2},
+{"name":"San José","avg":22.59123832,"std":3.98911351,"min":6.7,"max":42.1},
+{"name":"Lake Havasu City","avg":23.68972015,"std":3.989193107,"min":6.3,"max":40.5},
+{"name":"Jerusalem","avg":18.28583906,"std":3.989232404,"min":1.4,"max":35.0},
+{"name":"Minneapolis","avg":7.773860324,"std":3.989246962,"min":-8.7,"max":24.5},
+{"name":"Fukuoka","avg":16.97604953,"std":3.989313433,"min":-1.7,"max":35.2},
+{"name":"Ashgabat","avg":17.09740123,"std":3.98939221,"min":0.3,"max":33.4},
+{"name":"La Ceiba","avg":26.19850704,"std":3.98961849,"min":9.3,"max":42.7},
+{"name":"Skopje","avg":12.37229989,"std":3.990005679,"min":-4.3,"max":28.3},
+{"name":"Kolkata","avg":26.71895164,"std":3.99021855,"min":9.7,"max":42.5},
+{"name":"Hanga Roa","avg":20.49511847,"std":3.990266814,"min":2.6,"max":38.0},
+{"name":"Bilbao","avg":14.68722376,"std":3.990474617,"min":-2.2,"max":31.4},
+{"name":"Belgrade","avg":12.49919767,"std":3.990577406,"min":-5.1,"max":29.1},
+{"name":"Yerevan","avg":12.40949469,"std":3.991026309,"min":-4.1,"max":28.8},
+{"name":"Salt Lake City","avg":11.59554472,"std":3.99107973,"min":-4.7,"max":29.4},
+{"name":"Erzurum","avg":5.097961255,"std":3.991110913,"min":-12.1,"max":22.6},
+{"name":"Tabriz","avg":12.60607974,"std":3.991143623,"min":-4.2,"max":29.6},
+{"name":"Karachi","avg":25.99783607,"std":3.991153595,"min":9.9,"max":42.6},
+{"name":"City of San Marino","avg":11.81190116,"std":3.991164676,"min":-5.6,"max":29.6},
+{"name":"Hamburg","avg":9.676143366,"std":3.991165023,"min":-6.9,"max":26.0},
+{"name":"Ho Chi Minh City","avg":27.38523618,"std":3.991269519,"min":7.4,"max":45.0},
+{"name":"Gabès","avg":19.49595269,"std":3.991275902,"min":-0.4,"max":37.7},
+{"name":"Halifax","avg":7.494794625,"std":3.991400616,"min":-11.1,"max":23.9},
+{"name":"Athens","avg":19.20804164,"std":3.991533605,"min":2.1,"max":36.5},
+{"name":"Omaha","avg":10.60406839,"std":3.991534755,"min":-6.6,"max":27.0},
+{"name":"Portland {OR}","avg":12.38722644,"std":3.991585961,"min":-5.7,"max":28.9},
+{"name":"Bridgetown","avg":27.03093874,"std":3.991588228,"min":11.0,"max":42.7},
+{"name":"Ahvaz","avg":25.36724952,"std":3.991669301,"min":6.3,"max":41.5},
+{"name":"Stockholm","avg":6.593562449,"std":3.991697038,"min":-10.8,"max":23.2},
+{"name":"Surabaya","avg":27.09259075,"std":3.991751868,"min":9.1,"max":49.4},
+{"name":"Gangtok","avg":15.186332,"std":3.991768322,"min":-2.1,"max":36.0},
+{"name":"Dikson","avg":-11.09644077,"std":3.991782094,"min":-29.1,"max":5.9},
+{"name":"N'Djamena","avg":28.2930082,"std":3.991854498,"min":11.4,"max":45.6},
+{"name":"Murmansk","avg":0.6301248322,"std":3.991914516,"min":-17.0,"max":17.5},
+{"name":"Zagreb","avg":10.69304744,"std":3.992063237,"min":-11.5,"max":28.1},
+{"name":"Lusaka","avg":19.90344028,"std":3.992066971,"min":1.2,"max":36.2},
+{"name":"Conakry","avg":26.39706857,"std":3.992201952,"min":10.1,"max":42.6},
+{"name":"Atlanta","avg":16.98731737,"std":3.992276501,"min":-0.9,"max":33.4},
+{"name":"Ürümqi","avg":7.409008665,"std":3.992309631,"min":-13.2,"max":23.5},
+{"name":"Milwaukee","avg":8.902832481,"std":3.992367168,"min":-7.3,"max":26.3},
+{"name":"Darwin","avg":27.58914496,"std":3.992378005,"min":10.8,"max":45.0},
+{"name":"Yangon","avg":27.50614681,"std":3.992508741,"min":10.6,"max":45.0},
+{"name":"Houston","avg":20.80033891,"std":3.992514296,"min":3.0,"max":36.9},
+{"name":"Prague","avg":8.419225336,"std":3.992634204,"min":-11.7,"max":27.1},
+{"name":"Irkutsk","avg":0.9958206282,"std":3.992670297,"min":-15.9,"max":19.4},
+{"name":"Accra","avg":26.43044932,"std":3.992776842,"min":6.2,"max":43.7},
+{"name":"Da Nang","avg":25.81732445,"std":3.992819692,"min":8.4,"max":43.6},
+{"name":"New Delhi","avg":25.00329494,"std":3.992865509,"min":7.4,"max":41.6},
+{"name":"Hat Yai","avg":26.99782671,"std":3.992891227,"min":8.2,"max":44.6},
+{"name":"Lodwar","avg":29.2946521,"std":3.992993851,"min":12.9,"max":48.0},
+{"name":"Ankara","avg":11.99823225,"std":3.993092669,"min":-4.6,"max":28.5},
+{"name":"Yellowknife","avg":-4.307155778,"std":3.99323795,"min":-23.4,"max":11.9},
+{"name":"Whitehorse","avg":-0.1109990241,"std":3.993303204,"min":-17.9,"max":16.8},
+{"name":"Djibouti","avg":29.92343075,"std":3.993412828,"min":11.9,"max":50.8},
+{"name":"Marseille","avg":15.8014885,"std":3.993589676,"min":-1.4,"max":34.8},
+{"name":"Garoua","avg":28.28510308,"std":3.993896601,"min":11.3,"max":47.0},
+{"name":"Vienna","avg":10.3985561,"std":3.994039864,"min":-6.4,"max":27.5},
+{"name":"Ottawa","avg":6.590564758,"std":3.99404201,"min":-9.8,"max":23.3},
+{"name":"Beirut","avg":20.8945794,"std":3.994114957,"min":4.6,"max":37.6},
+{"name":"Shanghai","avg":16.70370592,"std":3.994161151,"min":-2.0,"max":32.8},
+{"name":"Dhaka","avg":25.89371187,"std":3.994184878,"min":7.9,"max":43.6},
+{"name":"Garissa","avg":29.28060565,"std":3.99431288,"min":11.2,"max":46.5},
+{"name":"Da Lat","avg":17.91073328,"std":3.994345394,"min":1.8,"max":34.6},
+{"name":"Chongqing","avg":18.58964226,"std":3.994479675,"min":1.5,"max":36.0},
+{"name":"Wellington","avg":12.89892167,"std":3.994507439,"min":-5.3,"max":29.6},
+{"name":"Wau","avg":27.80209534,"std":3.994563792,"min":10.7,"max":44.7},
+{"name":"Barcelona","avg":18.21482404,"std":3.994612904,"min":2.5,"max":33.9},
+{"name":"Nakhon Ratchasima","avg":27.29321964,"std":3.995101005,"min":8.5,"max":45.0},
+{"name":"La Paz","avg":23.71032294,"std":3.995178023,"min":5.7,"max":41.9},
+{"name":"Yinchuan","avg":8.980061728,"std":3.995210958,"min":-9.6,"max":27.7},
+{"name":"Dakar","avg":23.991155,"std":3.995237901,"min":6.3,"max":42.1},
+{"name":"Suva","avg":25.59390703,"std":3.99526366,"min":7.7,"max":44.0},
+{"name":"Flores,  Petén","avg":26.39620996,"std":3.995286202,"min":7.8,"max":44.2},
+{"name":"Palmerston North","avg":13.1940791,"std":3.995335571,"min":-4.3,"max":29.1},
+{"name":"Colombo","avg":27.4009712,"std":3.995359048,"min":9.5,"max":44.4},
+{"name":"Brussels","avg":10.50561714,"std":3.995402168,"min":-6.8,"max":27.8},
+{"name":"San Juan","avg":27.19843215,"std":3.995451782,"min":10.0,"max":43.8},
+{"name":"Belize City","avg":26.67865414,"std":3.995830713,"min":9.8,"max":43.6},
+{"name":"Singapore","avg":26.99015875,"std":3.995854304,"min":10.0,"max":45.3},
+{"name":"Cotonou","avg":27.20858621,"std":3.995941453,"min":10.5,"max":44.6},
+{"name":"Anadyr","avg":-6.899058591,"std":3.996081029,"min":-24.0,"max":8.9},
+{"name":"Brisbane","avg":21.40808025,"std":3.996150405,"min":3.4,"max":38.0},
+{"name":"Ifrane","avg":11.38654465,"std":3.996237836,"min":-6.0,"max":28.2},
+{"name":"Hong Kong","avg":23.29008844,"std":3.996245587,"min":5.4,"max":40.6},
+{"name":"Parakou","avg":26.7855962,"std":3.996264675,"min":8.4,"max":43.1},
+{"name":"Virginia Beach","avg":15.79285547,"std":3.996277834,"min":-1.3,"max":34.1},
+{"name":"Launceston","avg":13.100156,"std":3.996405767,"min":-4.4,"max":30.4},
+{"name":"Moscow","avg":5.808451185,"std":3.99641623,"min":-12.5,"max":24.8},
+{"name":"Abidjan","avg":25.98741468,"std":3.996454242,"min":7.6,"max":42.7},
+{"name":"Vilnius","avg":5.998716164,"std":3.996600567,"min":-12.2,"max":27.6},
+{"name":"Calgary","avg":4.412540459,"std":3.996612752,"min":-13.2,"max":21.5},
+{"name":"San Diego","avg":17.77893453,"std":3.99664633,"min":-0.1,"max":36.6},
+{"name":"Hargeisa","avg":21.69998312,"std":3.996682211,"min":5.3,"max":39.1},
+{"name":"London","avg":11.30843876,"std":3.99679595,"min":-6.8,"max":28.2},
+{"name":"Bloemfontein","avg":15.57224273,"std":3.99681893,"min":-3.4,"max":31.9},
+{"name":"St. Louis","avg":13.90771647,"std":3.996868818,"min":-4.9,"max":31.5},
+{"name":"Durban","avg":20.6269279,"std":3.996876281,"min":2.0,"max":37.2},
+{"name":"Birao","avg":26.50012254,"std":3.997108685,"min":9.5,"max":45.8},
+{"name":"Pittsburgh","avg":10.78884306,"std":3.997250865,"min":-5.2,"max":28.1},
+{"name":"San Francisco","avg":14.59080456,"std":3.997260901,"min":-3.1,"max":30.4},
+{"name":"Yakutsk","avg":-8.817303633,"std":3.997366652,"min":-25.6,"max":7.8},
+{"name":"San Antonio","avg":20.80404137,"std":3.997412707,"min":3.7,"max":38.0},
+{"name":"Antsiranana","avg":25.2093739,"std":3.997424834,"min":9.0,"max":41.9},
+{"name":"Upington","avg":20.39139162,"std":3.997448043,"min":3.3,"max":36.7},
+{"name":"Veracruz","avg":25.39187447,"std":3.997476739,"min":6.0,"max":41.9},
+{"name":"New Orleans","avg":20.69338369,"std":3.99751096,"min":-1.0,"max":38.7},
+{"name":"Suwałki","avg":7.197283002,"std":3.997568671,"min":-10.4,"max":26.2},
+{"name":"Palm Springs","avg":24.48259345,"std":3.997576838,"min":6.8,"max":42.0},
+{"name":"Libreville","avg":25.91914391,"std":3.997619702,"min":8.3,"max":42.8},
+{"name":"Roseau","avg":26.19506558,"std":3.997684313,"min":7.3,"max":43.5},
+{"name":"Thiès","avg":24.02475616,"std":3.997700361,"min":5.8,"max":41.5},
+{"name":"Helsinki","avg":5.8984925,"std":3.997927685,"min":-11.2,"max":23.5},
+{"name":"Busan","avg":14.99887112,"std":3.997955485,"min":-2.1,"max":31.7},
+{"name":"Tabora","avg":22.98960751,"std":3.998007145,"min":4.5,"max":40.7},
+{"name":"Karonga","avg":24.39961428,"std":3.998167471,"min":8.1,"max":40.8},
+{"name":"Tegucigalpa","avg":21.71599283,"std":3.998180917,"min":4.0,"max":39.8},
+{"name":"Charlotte","avg":16.10590881,"std":3.99819694,"min":0.1,"max":33.9},
+{"name":"Toamasina","avg":23.42073325,"std":3.99823216,"min":7.1,"max":42.8},
+{"name":"Indianapolis","avg":11.79408184,"std":3.998255243,"min":-4.7,"max":27.6},
+{"name":"Lahore","avg":24.30564199,"std":3.99839132,"min":6.8,"max":43.5},
+{"name":"Seoul","avg":12.49940793,"std":3.998440916,"min":-6.0,"max":29.5},
+{"name":"Mango","avg":28.09599116,"std":3.998446933,"min":12.3,"max":44.3},
+{"name":"Miami","avg":24.89768651,"std":3.998461095,"min":7.1,"max":41.6},
+{"name":"Ségou","avg":28.00161552,"std":3.998507756,"min":10.0,"max":46.1},
+{"name":"Saint-Pierre","avg":5.701638335,"std":3.998513858,"min":-10.5,"max":24.3},
+{"name":"Jos","avg":22.8035276,"std":3.998522821,"min":5.2,"max":40.5},
+{"name":"Batumi","avg":14.00117351,"std":3.998528916,"min":-4.2,"max":29.7},
+{"name":"Villahermosa","avg":27.1220248,"std":3.998577872,"min":10.9,"max":44.1},
+{"name":"Toronto","avg":9.392512118,"std":3.998590326,"min":-7.5,"max":28.2},
+{"name":"Dolisie","avg":23.99078164,"std":3.998655183,"min":6.5,"max":40.5},
+{"name":"Madrid","avg":15.00676483,"std":3.998727918,"min":-2.7,"max":31.5},
+{"name":"Bucharest","avg":10.78740312,"std":3.998749306,"min":-5.9,"max":28.0},
+{"name":"Mandalay","avg":28.00575628,"std":3.998890104,"min":9.0,"max":45.5},
+{"name":"Sochi","avg":14.18407452,"std":3.999022,"min":-4.3,"max":31.1},
+{"name":"Mombasa","avg":26.2909236,"std":3.999030323,"min":7.0,"max":43.1},
+{"name":"Mahajanga","avg":26.29715806,"std":3.999041026,"min":8.3,"max":45.2},
+{"name":"Lubumbashi","avg":20.77819879,"std":3.999078533,"min":3.8,"max":39.4},
+{"name":"Moncton","avg":6.100943676,"std":3.999113291,"min":-11.9,"max":23.8},
+{"name":"Cairns","avg":24.99244352,"std":3.999156736,"min":8.0,"max":41.9},
+{"name":"Assab","avg":30.50599994,"std":3.99915847,"min":13.5,"max":49.5},
+{"name":"Cabo San Lucas","avg":23.90018715,"std":3.999180055,"min":6.2,"max":40.3},
+{"name":"Beijing","avg":12.88298723,"std":3.999181705,"min":-7.1,"max":34.5},
+{"name":"Pretoria","avg":18.20103795,"std":3.999424875,"min":0.1,"max":34.6},
+{"name":"Algiers","avg":18.20394981,"std":3.999443781,"min":0.4,"max":35.7},
+{"name":"Pointe-Noire","avg":26.09745667,"std":3.999494419,"min":8.4,"max":42.3},
+{"name":"Bata","avg":25.11821867,"std":3.999527632,"min":6.8,"max":42.2},
+{"name":"Guangzhou","avg":22.39825535,"std":3.999692401,"min":4.5,"max":38.9},
+{"name":"Tirana","avg":15.20801174,"std":3.999746537,"min":-4.4,"max":32.4},
+{"name":"Manama","avg":26.49615229,"std":3.999753591,"min":10.7,"max":44.9},
+{"name":"Seville","avg":19.17477067,"std":3.999800728,"min":0.2,"max":37.5},
+{"name":"Petropavlovsk-Kamchatsky","avg":1.882567212,"std":3.999859999,"min":-14.9,"max":21.2},
+{"name":"Perth","avg":18.72043282,"std":3.999909583,"min":0.4,"max":37.6},
+{"name":"Las Vegas","avg":20.29531743,"std":3.999917834,"min":3.6,"max":37.2},
+{"name":"Istanbul","avg":13.9014967,"std":3.999958879,"min":-3.0,"max":31.0},
+{"name":"Almaty","avg":9.967812387,"std":3.999962785,"min":-7.0,"max":26.0},
+{"name":"Dampier","avg":26.4006037,"std":3.999982178,"min":10.1,"max":44.4},
+{"name":"Heraklion","avg":18.91501125,"std":4.000235356,"min":0.8,"max":37.1},
+{"name":"Anchorage","avg":2.794162846,"std":4.000238719,"min":-13.0,"max":20.9},
+{"name":"Bouaké","avg":26.00336167,"std":4.000260669,"min":9.2,"max":42.3},
+{"name":"Bishkek","avg":11.30226865,"std":4.000340635,"min":-5.4,"max":27.5},
+{"name":"New York City","avg":12.88404041,"std":4.000354296,"min":-5.3,"max":30.5},
+{"name":"Mogadishu","avg":27.10256133,"std":4.000451678,"min":8.6,"max":44.9},
+{"name":"Johannesburg","avg":15.48208199,"std":4.000550729,"min":-0.5,"max":33.4},
+{"name":"Lisbon","avg":17.52770057,"std":4.000554625,"min":0.6,"max":36.6},
+{"name":"Monaco","avg":16.4092573,"std":4.000560032,"min":-2.3,"max":34.2},
+{"name":"Yaoundé","avg":23.80240235,"std":4.000585016,"min":4.6,"max":40.2},
+{"name":"Lhasa","avg":7.610801472,"std":4.000677888,"min":-8.8,"max":24.8},
+{"name":"Luanda","avg":25.77833901,"std":4.000682724,"min":10.2,"max":42.8},
+{"name":"Alexandria","avg":19.98757895,"std":4.000729399,"min":4.0,"max":37.6},
+{"name":"Ngaoundéré","avg":22.00473892,"std":4.000887276,"min":5.3,"max":41.4},
+{"name":"Rome","avg":15.21227512,"std":4.001005194,"min":-3.0,"max":32.3},
+{"name":"Havana","avg":25.20856783,"std":4.001028493,"min":7.8,"max":42.8},
+{"name":"Bratislava","avg":10.51205554,"std":4.001066049,"min":-5.8,"max":28.3},
+{"name":"Phnom Penh","avg":28.30066833,"std":4.001071227,"min":11.3,"max":45.5},
+{"name":"Tauranga","avg":14.79675125,"std":4.001074453,"min":-3.2,"max":31.6},
+{"name":"Tucson","avg":20.92073714,"std":4.001084958,"min":2.3,"max":39.3},
+{"name":"Muscat","avg":27.99415206,"std":4.001152964,"min":9.5,"max":44.2},
+{"name":"Louisville","avg":13.90842309,"std":4.001156916,"min":-4.8,"max":31.0},
+{"name":"Changsha","avg":17.38284946,"std":4.001262927,"min":-1.4,"max":34.5},
+{"name":"Niamey","avg":29.28583185,"std":4.001266,"min":12.5,"max":48.7},
+{"name":"Zürich","avg":9.335238713,"std":4.001327226,"min":-6.4,"max":25.7},
+{"name":"Ouagadougou","avg":28.32373344,"std":4.001470282,"min":10.7,"max":47.9},
+{"name":"Port Vila","avg":24.28692569,"std":4.001492559,"min":7.5,"max":40.3},
+{"name":"Aden","avg":29.09615917,"std":4.00149538,"min":12.1,"max":47.5},
+{"name":"İzmir","avg":17.88256027,"std":4.001597526,"min":-1.0,"max":33.9},
+{"name":"Thessaloniki","avg":16.00280294,"std":4.001611242,"min":-0.1,"max":31.7},
+{"name":"Mexicali","avg":23.07420314,"std":4.001692795,"min":4.6,"max":39.2},
+{"name":"Cape Town","avg":16.21502802,"std":4.001699454,"min":-0.7,"max":32.9},
+{"name":"Palermo","avg":18.5179431,"std":4.001703416,"min":1.3,"max":37.4},
+{"name":"Mzuzu","avg":17.70051931,"std":4.001763966,"min":0.5,"max":34.6},
+{"name":"Brazzaville","avg":24.99947934,"std":4.00186855,"min":8.7,"max":43.1},
+{"name":"Praia","avg":24.39052385,"std":4.001998592,"min":7.2,"max":42.0},
+{"name":"Dushanbe","avg":14.7006696,"std":4.002106453,"min":-2.6,"max":32.9},
+{"name":"Lviv","avg":7.798113368,"std":4.002156888,"min":-9.3,"max":24.2},
+{"name":"Andorra la Vella","avg":9.793571261,"std":4.002211648,"min":-8.7,"max":26.5},
+{"name":"Bujumbura","avg":23.77885868,"std":4.002323896,"min":6.4,"max":42.1},
+{"name":"Zanzibar City","avg":25.98619853,"std":4.002424136,"min":7.2,"max":42.9},
+{"name":"Timbuktu","avg":28.00327123,"std":4.002637164,"min":9.4,"max":46.4},
+{"name":"Kuwait City","avg":25.67408218,"std":4.002661595,"min":7.9,"max":41.8},
+{"name":"Chittagong","avg":25.89939559,"std":4.002803039,"min":7.6,"max":42.5},
+{"name":"Sydney","avg":17.69415955,"std":4.002882069,"min":1.3,"max":34.3},
+{"name":"Port-Gentil","avg":25.97267888,"std":4.002907869,"min":9.4,"max":42.4},
+{"name":"Odienné","avg":25.96679733,"std":4.002932716,"min":6.8,"max":43.1},
+{"name":"Antananarivo","avg":17.89134022,"std":4.003114023,"min":0.5,"max":35.1},
+{"name":"Oranjestad","avg":28.10971551,"std":4.003197022,"min":11.7,"max":45.3},
+{"name":"Columbus","avg":11.68411866,"std":4.00321132,"min":-7.4,"max":28.6},
+{"name":"Sana'a","avg":20.0117657,"std":4.003213001,"min":3.2,"max":37.7},
+{"name":"Arkhangelsk","avg":1.31862943,"std":4.003537789,"min":-16.0,"max":19.5},
+{"name":"Vladivostok","avg":4.90510356,"std":4.003541991,"min":-12.8,"max":21.4},
+{"name":"Ghanzi","avg":21.39366841,"std":4.003564108,"min":4.8,"max":39.5},
+{"name":"El Paso","avg":18.10368267,"std":4.003694283,"min":-0.8,"max":36.0},
+{"name":"Warsaw","avg":8.491557941,"std":4.003730768,"min":-9.1,"max":25.9},
+{"name":"Wichita","avg":13.90190476,"std":4.0038393,"min":-4.9,"max":31.9},
+{"name":"Vancouver","avg":10.38765299,"std":4.003852035,"min":-6.1,"max":27.6},
+{"name":"Kandi","avg":27.7051885,"std":4.003941642,"min":8.5,"max":45.7},
+{"name":"Chicago","avg":9.809249625,"std":4.004005445,"min":-5.4,"max":28.6},
+{"name":"Tripoli","avg":20.01016158,"std":4.004045357,"min":1.3,"max":36.5},
+{"name":"Monterrey","avg":22.29145073,"std":4.004108138,"min":5.7,"max":38.2},
+{"name":"Hamilton","avg":13.81077265,"std":4.004112196,"min":-3.2,"max":32.2},
+{"name":"Maun","avg":22.3918056,"std":4.004267639,"min":6.5,"max":40.7},
+{"name":"Kyoto","avg":15.79008009,"std":4.004348379,"min":-1.8,"max":35.9},
+{"name":"Boston","avg":10.9011013,"std":4.004493423,"min":-6.2,"max":28.1},
+{"name":"Rabat","avg":17.17975285,"std":4.004506366,"min":-2.9,"max":33.8},
+{"name":"Baguio","avg":19.49380536,"std":4.004520503,"min":2.0,"max":37.5},
+{"name":"Tamanrasset","avg":21.70607767,"std":4.004607599,"min":5.0,"max":39.2},
+{"name":"Saint Petersburg","avg":5.806696832,"std":4.0046141,"min":-12.8,"max":23.0},
+{"name":"Burnie","avg":13.12521025,"std":4.004728014,"min":-3.9,"max":31.3},
+{"name":"Hobart","avg":12.7205059,"std":4.004744603,"min":-6.0,"max":30.0},
+{"name":"Lagos","avg":26.81095753,"std":4.004883197,"min":8.6,"max":42.7},
+{"name":"Dublin","avg":9.791607531,"std":4.004908894,"min":-7.5,"max":25.3},
+{"name":"Alexandra","avg":10.98870148,"std":4.004910261,"min":-9.5,"max":29.0},
+{"name":"Kunming","avg":15.66427053,"std":4.005056114,"min":-2.2,"max":33.1},
+{"name":"Paris","avg":12.31418412,"std":4.005085282,"min":-4.2,"max":29.7},
+{"name":"Khartoum","avg":29.92486733,"std":4.005198125,"min":11.4,"max":48.2},
+{"name":"Vaduz","avg":10.10988222,"std":4.005292003,"min":-8.3,"max":28.2},
+{"name":"Kathmandu","avg":18.30224479,"std":4.005338993,"min":0.9,"max":35.2},
+{"name":"Nashville","avg":15.41685377,"std":4.005377908,"min":-2.4,"max":35.6},
+{"name":"Chiang Mai","avg":25.80587382,"std":4.005418378,"min":6.7,"max":43.3},
+{"name":"Xi'an","avg":14.10086877,"std":4.00544129,"min":-4.3,"max":31.9},
+{"name":"Napoli","avg":15.92659193,"std":4.005451335,"min":-1.9,"max":32.2},
+{"name":"Bergen","avg":7.693276323,"std":4.005522231,"min":-8.8,"max":25.7},
+{"name":"Dubai","avg":26.90723379,"std":4.005665377,"min":10.3,"max":43.5},
+{"name":"Melbourne","avg":15.08827408,"std":4.005669503,"min":-2.0,"max":32.0},
+{"name":"Addis Ababa","avg":15.98881937,"std":4.005715735,"min":-1.2,"max":33.7},
+{"name":"Dallas","avg":18.99840392,"std":4.005772782,"min":-0.7,"max":37.9},
+{"name":"Tunis","avg":18.3845481,"std":4.005820889,"min":0.3,"max":34.7},
+{"name":"Minsk","avg":6.698532308,"std":4.005957289,"min":-11.4,"max":23.1},
+{"name":"Adelaide","avg":17.299591,"std":4.005983432,"min":-2.0,"max":34.6},
+{"name":"Livingstone","avg":21.80262181,"std":4.006006279,"min":5.0,"max":38.5},
+{"name":"Bosaso","avg":29.99616593,"std":4.006138402,"min":12.2,"max":47.3},
+{"name":"Tel Aviv","avg":20.00103654,"std":4.006209845,"min":3.8,"max":36.8},
+{"name":"St. John's","avg":5.008404486,"std":4.006265866,"min":-11.4,"max":23.1},
+{"name":"Naha","avg":23.11481075,"std":4.006327992,"min":6.8,"max":41.1},
+{"name":"Nouadhibou","avg":21.29751716,"std":4.006354686,"min":3.9,"max":39.1},
+{"name":"Kyiv","avg":8.373158964,"std":4.006430667,"min":-8.3,"max":26.7},
+{"name":"Budapest","avg":11.2952823,"std":4.006480797,"min":-7.4,"max":28.2},
+{"name":"Tromsø","avg":2.922348124,"std":4.006521402,"min":-14.3,"max":20.2},
+{"name":"Odesa","avg":10.70220029,"std":4.006524706,"min":-8.1,"max":28.3},
+{"name":"Berlin","avg":10.28692708,"std":4.006550654,"min":-8.1,"max":27.5},
+{"name":"Kumasi","avg":26.01232278,"std":4.006615229,"min":9.2,"max":42.0},
+{"name":"Port Sudan","avg":28.39582034,"std":4.006629069,"min":10.5,"max":47.5},
+{"name":"Sarajevo","avg":10.11252945,"std":4.006661943,"min":-7.7,"max":26.1},
+{"name":"Valletta","avg":18.80925264,"std":4.006698283,"min":1.0,"max":35.8},
+{"name":"Makassar","avg":26.72767609,"std":4.00673514,"min":8.3,"max":42.2},
+{"name":"Auckland","avg":15.20135175,"std":4.006863596,"min":-2.5,"max":31.7},
+{"name":"Lake Tekapo","avg":8.688316439,"std":4.007060626,"min":-8.6,"max":27.3},
+{"name":"Austin","avg":20.71215049,"std":4.007092516,"min":4.1,"max":37.1},
+{"name":"George Town","avg":27.89755721,"std":4.007232145,"min":9.7,"max":48.4},
+{"name":"Detroit","avg":9.986512623,"std":4.00769384,"min":-7.1,"max":28.5},
+{"name":"Canberra","avg":13.09401787,"std":4.007711943,"min":-5.5,"max":32.8},
+{"name":"Novosibirsk","avg":1.698940611,"std":4.007815273,"min":-16.7,"max":19.7},
+{"name":"Ljubljana","avg":10.90459593,"std":4.007870508,"min":-7.2,"max":28.2},
+{"name":"Gjoa Haven","avg":-14.42786882,"std":4.008073424,"min":-31.2,"max":4.0},
+{"name":"Nairobi","avg":17.78398115,"std":4.008078756,"min":-0.5,"max":37.6},
+{"name":"Niigata","avg":13.90117414,"std":4.008086137,"min":-5.0,"max":32.8},
+{"name":"Luxembourg City","avg":9.311718064,"std":4.008087601,"min":-7.3,"max":28.0},
+{"name":"Dodoma","avg":22.69838221,"std":4.008098821,"min":7.3,"max":41.9},
+{"name":"Las Palmas de Gran Canaria","avg":21.22475994,"std":4.008235508,"min":2.4,"max":38.0},
+{"name":"Amsterdam","avg":10.20493418,"std":4.008276593,"min":-8.5,"max":28.2},
+{"name":"Nicosia","avg":19.69583738,"std":4.008494309,"min":0.6,"max":36.8},
+{"name":"Rostov-on-Don","avg":9.880629568,"std":4.008526992,"min":-6.5,"max":26.8},
+{"name":"Kankan","avg":26.51022013,"std":4.008555305,"min":9.4,"max":44.2},
+{"name":"Baltimore","avg":13.11975519,"std":4.008807109,"min":-5.1,"max":28.8},
+{"name":"Banjul","avg":26.01586718,"std":4.008885829,"min":8.4,"max":43.3},
+{"name":"Dar es Salaam","avg":25.83615365,"std":4.009242619,"min":9.1,"max":42.5},
+{"name":"San Jose","avg":16.39977014,"std":4.009320225,"min":-3.8,"max":35.1},
+{"name":"Jayapura","avg":27.0060959,"std":4.009354848,"min":7.9,"max":45.7},
+{"name":"Oulu","avg":2.690148985,"std":4.009369955,"min":-14.1,"max":18.7},
+{"name":"Sacramento","avg":16.30702652,"std":4.00953598,"min":-4.1,"max":32.3},
+{"name":"Hanoi","avg":23.60531412,"std":4.009571546,"min":2.9,"max":40.9},
+{"name":"Erbil","avg":19.49287472,"std":4.009652671,"min":3.2,"max":39.3},
+{"name":"Nuuk","avg":-1.395073425,"std":4.009830287,"min":-19.2,"max":16.2},
+{"name":"Valencia","avg":18.2812776,"std":4.009836247,"min":2.3,"max":36.1},
+{"name":"Pontianak","avg":27.69666239,"std":4.009873594,"min":10.6,"max":45.7},
+{"name":"Tokyo","avg":15.40896012,"std":4.0099932,"min":-2.2,"max":32.5},
+{"name":"Dili","avg":26.59932469,"std":4.010006281,"min":10.7,"max":44.4},
+{"name":"Reggane","avg":28.31068547,"std":4.010097764,"min":10.7,"max":46.9},
+{"name":"Seattle","avg":11.28491936,"std":4.010142331,"min":-5.4,"max":27.9},
+{"name":"Dunedin","avg":11.12367489,"std":4.010148937,"min":-5.0,"max":28.2},
+{"name":"Damascus","avg":16.99399702,"std":4.010366414,"min":0.7,"max":33.7},
+{"name":"Honiara","avg":26.48656304,"std":4.010502004,"min":9.9,"max":43.3},
+{"name":"Blantyre","avg":22.19968544,"std":4.010502845,"min":5.2,"max":39.9},
+{"name":"Kingston","avg":27.39763816,"std":4.010725164,"min":10.0,"max":43.3},
+{"name":"Mumbai","avg":27.09851821,"std":4.010818363,"min":10.0,"max":43.7},
+{"name":"Tallinn","avg":6.422198644,"std":4.010883527,"min":-10.7,"max":22.6},
+{"name":"Bamako","avg":27.80870148,"std":4.011053724,"min":11.7,"max":45.3},
+{"name":"Chihuahua","avg":18.60303718,"std":4.011091713,"min":2.1,"max":36.4},
+{"name":"Tashkent","avg":14.78635461,"std":4.011307137,"min":-1.8,"max":32.4},
+{"name":"Napier","avg":14.60205127,"std":4.011518208,"min":-3.9,"max":32.6},
+{"name":"Bissau","avg":27.01489943,"std":4.011607704,"min":9.9,"max":44.3},
+{"name":"Medan","avg":26.50220504,"std":4.011637547,"min":9.6,"max":43.3},
+{"name":"Malabo","avg":26.31357144,"std":4.011767566,"min":3.8,"max":46.5},
+{"name":"Douala","avg":26.7035037,"std":4.011819021,"min":9.7,"max":43.8},
+{"name":"Port Moresby","avg":26.88207758,"std":4.011943254,"min":7.0,"max":44.4},
+{"name":"Denver","avg":10.38974982,"std":4.012060342,"min":-6.0,"max":29.2},
+{"name":"Sokoto","avg":27.99810188,"std":4.012121288,"min":10.0,"max":43.9},
+{"name":"Edmonton","avg":4.187681721,"std":4.012121392,"min":-12.9,"max":20.5},
+{"name":"Palembang","avg":27.32045153,"std":4.012646264,"min":9.1,"max":44.2},
+{"name":"Ulaanbaatar","avg":-0.3801260558,"std":4.01275157,"min":-17.3,"max":18.3},
+{"name":"Marrakesh","avg":19.58518428,"std":4.012797494,"min":2.0,"max":38.0},
+{"name":"Asmara","avg":15.58311497,"std":4.012806392,"min":-2.8,"max":32.1},
+{"name":"Albuquerque","avg":14.00273407,"std":4.01309124,"min":-2.1,"max":30.9},
+{"name":"Tbilisi","avg":12.89215778,"std":4.013196702,"min":-4.0,"max":32.1},
+{"name":"Chișinău","avg":10.20794882,"std":4.013218417,"min":-7.8,"max":28.3},
+{"name":"Sofia","avg":10.62786904,"std":4.013279138,"min":-7.3,"max":26.9},
+{"name":"Kabul","avg":12.10183105,"std":4.013624946,"min":-6.3,"max":29.3},
+{"name":"Taipei","avg":23.00983202,"std":4.013831782,"min":6.2,"max":40.3},
+{"name":"Tehran","avg":16.99093269,"std":4.014023829,"min":0.0,"max":35.6},
+{"name":"Kano","avg":26.4029306,"std":4.014153922,"min":8.1,"max":45.8},
+{"name":"Lomé","avg":26.89970904,"std":4.014254695,"min":9.2,"max":45.1},
+{"name":"Mexico City","avg":17.52270541,"std":4.01434204,"min":-1.5,"max":35.6},
+{"name":"Jakarta","avg":26.69608845,"std":4.014477115,"min":9.4,"max":44.3},
+{"name":"Iqaluit","avg":-9.321946715,"std":4.01448167,"min":-27.5,"max":7.5},
+{"name":"Alice Springs","avg":20.99504317,"std":4.014508549,"min":4.5,"max":38.6},
+{"name":"Copenhagen","avg":9.089714831,"std":4.014538248,"min":-8.9,"max":26.1},
+{"name":"Managua","avg":27.30806677,"std":4.014944038,"min":9.0,"max":46.3},
+{"name":"Winnipeg","avg":3.013253473,"std":4.014947391,"min":-15.6,"max":21.4},
+{"name":"Nassau","avg":24.59690506,"std":4.015084352,"min":7.5,"max":42.2},
+{"name":"Kinshasa","avg":25.31367927,"std":4.015141449,"min":7.4,"max":43.5},
+{"name":"Tijuana","avg":17.81342347,"std":4.015502853,"min":1.7,"max":34.1},
+{"name":"Gaborone","avg":20.99297746,"std":4.016078917,"min":3.7,"max":38.8},
+{"name":"Bulawayo","avg":18.91507758,"std":4.016161989,"min":1.8,"max":37.5},
+{"name":"Pyongyang","avg":10.78653126,"std":4.016187631,"min":-8.8,"max":27.4},
+{"name":"Cracow","avg":9.323785531,"std":4.016500579,"min":-8.9,"max":27.5},
+{"name":"Makurdi","avg":26.0085483,"std":4.016771769,"min":9.2,"max":42.5},
+{"name":"Harbin","avg":4.997331356,"std":4.017271875,"min":-11.3,"max":21.7},
+{"name":"Kansas City","avg":12.51398872,"std":4.017272424,"min":-6.0,"max":30.9},
+{"name":"Ouarzazate","avg":18.8864838,"std":4.017586246,"min":1.8,"max":36.0},
+{"name":"Frankfurt","avg":10.57926356,"std":4.018200241,"min":-6.2,"max":27.4},
+{"name":"Kuala Lumpur","avg":27.29836666,"std":4.018663878,"min":8.6,"max":44.6},
+{"name":"Montreal","avg":6.78818515,"std":4.018895252,"min":-9.8,"max":28.2},
+{"name":"Malé","avg":28.01654602,"std":4.018942869,"min":8.6,"max":47.9},
+{"name":"Manila","avg":28.39242402,"std":4.019090687,"min":12.7,"max":47.1},
+{"name":"Harare","avg":18.40461124,"std":4.019465954,"min":1.7,"max":34.3},
+{"name":"Guadalajara","avg":20.92320578,"std":4.019567146,"min":1.8,"max":39.0},
+{"name":"Toliara","avg":24.09833236,"std":4.020804249,"min":3.6,"max":40.1},
+{"name":"Riga","avg":6.198748195,"std":4.022539014,"min":-10.9,"max":23.2},
+{"name":"Fairbanks","avg":-2.317820622,"std":4.022801586,"min":-19.3,"max":14.9},
+{"name":"Vientiane","avg":25.92164787,"std":4.024171564,"min":9.1,"max":43.7},
+{"name":"Sapporo","avg":8.915333773,"std":4.02512289,"min":-7.6,"max":29.4},
+{"name":"Wrocław","avg":9.598262077,"std":4.025496904,"min":-10.0,"max":27.2},
+{"name":"Panama City","avg":27.99201772,"std":4.028297228,"min":10.1,"max":46.2}
+]}
